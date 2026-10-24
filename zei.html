@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zei — Isabela Abdenor</title>
+<meta name="description" content="Case Zei: um app de lista de compras que tenta segurar a decisão no corredor do mercado. Projeto acadêmico revisitado em 2026.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Zei — Isabela Abdenor">
+<meta property="og:description" content="Revisão de um app de lista de compras com dados públicos, concorrentes e avaliação heurística.">
+<meta property="og:image" content="https://isabelaabdenor-ctrl.github.io/img/zei/telas.webp">
+<meta property="og:url" content="https://isabelaabdenor-ctrl.github.io/zei.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=3">
+</head>
+<body>
+
+<header class="site-head">
+  <a class="name" href="index.html">Isabela Abdenor</a>
+  <nav aria-label="Principal">
+    <a href="index.html#trabalhos">Trabalhos</a>
+    <a href="index.html#sobre">Sobre</a>
+    <a href="index.html#contato">Contato</a>
+  </nav>
+</header>
+
+<main>
+  <section class="case-hero">
+    <p class="kind">Projeto acadêmico, revisitado em 2026</p>
+    <h1>Zei: uma lista de compras que segura a decisão no corredor</h1>
+    <p class="summary">Um app para planejar a compra do mês, acompanhar o gasto enquanto anda pelo mercado e não sair de lá sem o que precisava. O Zei foi criado em 2024 por Robert Rodrigues, e eu participei da pesquisa e de partes de apoio do projeto. Em 2026 voltei a ele sozinha para checar as premissas com dados públicos, olhar os concorrentes e avaliar as telas.</p>
+
+    <dl class="case-facts">
+      <div><dt>Equipe</dt><dd>Criado por Robert Rodrigues, com a minha participação</dd></div>
+      <div><dt>Meu papel</dt><dd>Em 2024, apoio na pesquisa. Em 2026, toda a revisão.</dd></div>
+      <div><dt>Contexto</dt><dd>Projeto de curso, 2024</dd></div>
+      <div><dt>Plataforma</dt><dd>App mobile</dd></div>
+      <div><dt>Ferramentas</dt><dd>Figma</dd></div>
+    </dl>
+  </section>
+
+  <figure class="cover">
+    <img src="img/zei/capa.webp" alt="Painel com a marca Zei, telas do app e aplicações em ponto de venda" width="1400" height="788">
+  </figure>
+
+  <article class="doc">
+
+    <div class="tldr">
+      <dl>
+        <div><dt>O problema</dt><dd>Quem faz compra de mercado com lista ainda gasta mais do que planejou e às vezes não encontra o que foi buscar.</dd></div>
+        <div><dt>O que eu fiz</dt><dd>Em 2024, participei da pesquisa do projeto. Em 2026, sozinha, troquei os números sem fonte por dados públicos, analisei concorrentes e avaliei as telas pelas heurísticas de Nielsen.</dd></div>
+        <div><dt>O que mudou na revisão</dt><dd>Troquei números sem fonte por dados públicos, encontrei um concorrente que resolve metade do problema e propus cortar o escopo de 13 funcionalidades para 3.</dd></div>
+      </dl>
+    </div>
+
+    <!-- ===================== -->
+    <h2>O problema</h2>
+    <p>A ideia do Zei nasceu de uma cena comum: a pessoa faz a lista em casa, chega ao mercado, o produto não está na gôndola, ela pega outro mais caro, compra o que estava em promoção e descobre no caixa que passou do orçamento.</p>
+    <aside class="note"><b>Por que tirei os números antigos</b>A versão de 2024 dizia "10x mais gastos" e "20% do tempo". Eram hipóteses, sem pesquisa por trás. Hoje prefiro um número menor com fonte a um número grande que eu não consigo defender.</aside>
+    <p>A primeira versão tratava isso como três problemas separados: falta de informação, estouro de orçamento e falta de produto. Revisitando, percebi que eles têm a mesma raiz: a decisão de compra escapa da lista no momento em que a pessoa está no corredor.</p>
+
+    <h3>O que os dados públicos dizem</h3>
+    <div class="facts-grid">
+      <div class="fact">
+        <div class="n">43%</div>
+        <p>das últimas cinco compras de supermercado foram feitas sem planejamento, segundo os entrevistados.</p>
+        <span class="source"><a href="https://www.spcbrasil.org.br/uploads/st_imprensa/release_compras_por_impulso2.pdf">SPC Brasil e CNDL, 2015</a></span>
+      </div>
+      <div class="fact">
+        <div class="n">57%</div>
+        <p>das compras de mercado feitas por impulso têm a promoção como gatilho.</p>
+        <span class="source"><a href="https://sbvc.com.br/bfd_download/release-estudo-jornada-de-compra-do-consumidor-omnichannel">SBVC e Instituto Qualibest</a></span>
+      </div>
+      <div class="fact">
+        <div class="n">67–76%</div>
+        <p>dos itens de uma lista digital são comprados, contra 85–91% de uma lista em papel. Quem usa lista no celular a trata como provisória.</p>
+        <span class="source"><a href="https://newsblog.drexel.edu/2019/05/14/digital-shopping-lists-can-lead-to-impulse-buying/">Drexel University, 2019</a></span>
+      </div>
+      <div class="fact">
+        <div class="n">≈11%</div>
+        <p>dos produtos estavam em falta nas gôndolas dos supermercados brasileiros ao longo de 2025, com pico de 15,3% em janeiro de 2024.</p>
+        <span class="source"><a href="https://mercadoeconsumo.com.br/20/02/2024/noticias/supermercados-registram-ruptura-de-153-em-janeiro-segundo-pesquisa-da-neogrid/">Índice de Ruptura Neogrid</a></span>
+      </div>
+    </div>
+    <p>O dado da Drexel foi o que mais mudou o projeto. Ele sugere que digitalizar a lista não basta e pode até piorar: a lista no celular parece editável, então vira sugestão, não compromisso. Um app de lista precisa fazer a lista ter peso na hora da decisão.</p>
+    <aside class="note"><b>Um cuidado com as fontes</b>Os estudos não concordam entre si: a pesquisa da SBVC diz que só 8% das compras de mercado são por impulso. Uso os números para mostrar o padrão, não como medida exata do problema.</aside>
+    <p>A pesquisa da SBVC aponta que a maioria das pessoas diz planejar a compra. Isso reforça a leitura: o problema não é a falta de lista, é o que acontece com ela dentro do mercado.</p>
+
+    <h3>Hipóteses</h3>
+    <p>Sem pesquisa com usuários, trato o que segue como hipóteses a validar, não como conclusões.</p>
+    <ol>
+      <li>Ver o total da compra subindo, comparado com o orçamento, faz a pessoa pensar duas vezes antes de pegar um item fora da lista.</li>
+      <li>Saber antes de sair de casa se o produto está disponível, e por quanto, evita a troca por um item mais caro na hora.</li>
+      <li>Uma lista compartilhada com a casa evita item duplicado e item esquecido.</li>
+    </ol>
+
+    <!-- ===================== -->
+    <h2>Quem já resolve parte disso</h2>
+    <p>Comparei o Zei com três apps reais, dois de lista de compras e um de preços feito a partir de notas fiscais.</p>
+
+    <div class="table-wrap wide">
+      <table>
+        <thead>
+          <tr><th scope="col">App</th><th scope="col">Lista compartilhada</th><th scope="col">Total e orçamento</th><th scope="col">Preço real na região</th><th scope="col">O que aprendi com ele</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Listonic</th><td class="yes">Sim</td><td class="yes">Preço por item e total</td><td class="no">Não, o preço é digitado</td><td>Mostrar quanto falta gastar ajuda a decidir, mas digitar o preço de cada item dá trabalho demais.</td></tr>
+          <tr><th scope="row">Bring!</th><td class="yes">Sim, em tempo real</td><td class="no">Não</td><td class="no">Não</td><td>A grade de ícones deixa a lista rápida de montar e fácil de ler no corredor.</td></tr>
+          <tr><th scope="row">Menor Preço Brasil</th><td class="no">Não</td><td class="no">Não</td><td class="yes">Sim, pelas notas fiscais</td><td>O dado de preço já existe e é público. O app busca produto por produto, não pela lista inteira.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="source">Fontes: <a href="https://listonic.com/compare-apps/listonic-vs-bring">Listonic e Bring!</a> (comparação publicada pelo Listonic, conferir nas lojas de apps), <a href="https://sefaz.es.gov.br/consumidor-capixaba-ja-pode-economizar-com-ap">Menor Preço no ES (Sefaz-ES)</a>, <a href="https://olhardigital.com.br/2025/08/03/dicas-e-tutoriais/quer-economizar-na-farmacia-e-supermercado-conheca-o-app-menor-preco-brasil/">funcionamento do Menor Preço Brasil</a>.</p>
+
+    <p>A oportunidade está no meio: ninguém junta a lista da casa com o preço real do mercado mais próximo e um orçamento visível.</p>
+    <aside class="note"><b>A descoberta que mudou a solução</b>Na versão original, os preços seriam atualizados pelos próprios usuários. Sem usuários, não há preço, e o app nasce vazio. O Menor Preço mostra que dá para partir dos dados de nota fiscal, que já são públicos.</aside>
+    <p>Isso também resolve um problema que o projeto não previa em 2024: um app que depende de os usuários atualizarem preços começa sem nenhum dado e não tem motivo para alguém usar no primeiro dia.</p>
+
+    <!-- ===================== -->
+    <h2>A solução de 2024</h2>
+    <p>O app foi organizado em quatro áreas: criar e gerenciar listas, concluir a compra, avaliar a experiência e perfil. Depois vieram os wireframes do fluxo principal e, por fim, a identidade e as telas em alta fidelidade.</p>
+
+    <figure class="figure wide">
+      <img src="img/zei/arquitetura.webp" alt="Diagrama de arquitetura da informação: landing page, entrar ou criar conta, home e as áreas de lista, rearranjar, ajuda e perfil" loading="lazy" width="1400" height="788">
+      <figcaption>Arquitetura da informação da primeira versão.</figcaption>
+    </figure>
+
+    <figure class="figure wide">
+      <img src="img/zei/wireframes.gif" alt="Wireframes em baixa fidelidade das telas de login, cadastro, lista e conclusão de compra" loading="lazy" width="1400" height="788">
+      <figcaption>Wireframes do fluxo de cadastro até a lista concluída.</figcaption>
+    </figure>
+
+    <figure class="figure wide">
+      <img src="img/zei/telas.webp" alt="Telas em alta fidelidade: lista de produtos com fotos, lista concluída, produto não encontrado, avaliação da experiência e alerta" loading="lazy" width="1400" height="788">
+      <figcaption>Telas finais, incluindo os estados de produto não encontrado e de lista concluída.</figcaption>
+    </figure>
+
+    <!-- ===================== -->
+    <h2>Revisitando: avaliação das telas</h2>
+    <p>Sem usuários para testar, avaliei a versão de 2024 com as 10 heurísticas de usabilidade de Jakob Nielsen. É uma inspeção feita por mim, então encontra problemas de interface, mas não substitui um teste com pessoas.</p>
+
+    <div class="finding fix">
+      <h3>O app promete mais do que a estrutura entrega</h3>
+      <p class="rule">Estética e design minimalista</p>
+      <p>A apresentação lista 13 funcionalidades, entre elas fila digital, mapa dinâmico, radar de promoções e formas de pagamento. A arquitetura só cobre listas e perfil. Cada funcionalidade a mais disputa atenção com a tarefa principal, que é fazer a compra caber na lista.</p>
+      <p><strong>Proposta:</strong> manter só três: lista compartilhada, total comparado com o orçamento e preço e disponibilidade no mercado escolhido.</p>
+    </div>
+    <aside class="note"><b>Por que cortar</b>A fila digital e o mapa são boas ideias. Mas nenhuma das hipóteses depende deles, e cada tela a mais é uma tela que alguém precisa entender no meio do corredor.</aside>
+
+    <div class="finding fix">
+      <h3>A conta vem antes do valor</h3>
+      <p class="rule">Flexibilidade e eficiência de uso</p>
+      <p>O fluxo começa em "Entrar ou criar conta". A pessoa precisa se cadastrar antes de ver para que o app serve.</p>
+      <p><strong>Proposta:</strong> deixar criar a primeira lista sem conta e pedir o cadastro só na hora de compartilhar com alguém, que é quando a conta passa a fazer sentido.</p>
+    </div>
+
+    <div class="finding fix">
+      <h3>"Excluir compra" mora no perfil</h3>
+      <p class="rule">Prevenção de erros</p>
+      <p>Uma ação destrutiva sobre uma compra está no mesmo menu de "Mudar senha" e "Mudar foto", longe da compra que ela apaga.</p>
+      <p><strong>Proposta:</strong> mover a exclusão para dentro do histórico, ao lado da compra, com confirmação e opção de desfazer.</p>
+    </div>
+
+    <div class="finding fix">
+      <h3>"Rearranjar" não diz o que faz</h3>
+      <p class="rule">Correspondência entre o sistema e o mundo real</p>
+      <p>É um item do menu principal com um rótulo que não deixa claro se reorganiza a lista, os corredores ou outra coisa.</p>
+      <p><strong>Proposta:</strong> trocar por uma ação dentro da lista, como "Ordenar pelo corredor", que diz exatamente o que acontece.</p>
+    </div>
+
+    <div class="finding keep">
+      <h3>O que eu manteria: o estado de produto não encontrado</h3>
+      <p class="rule">Ajudar a reconhecer e se recuperar de erros</p>
+      <p>Quando a busca não encontra o produto, a tela explica o que houve e oferece uma saída: adicionar o item manualmente. A pessoa nunca fica num beco sem saída.</p>
+    </div>
+
+    <!-- ===================== -->
+    <h2>Como eu validaria</h2>
+    <p>O próximo passo é um teste de usabilidade com cinco pessoas que fazem compra de mercado toda semana, usando um protótipo com as três mudanças propostas.</p>
+    <ul>
+      <li><strong>Tarefas:</strong> montar uma lista de 10 itens para a semana, definir um orçamento e simular a compra num mercado onde dois itens estão em falta.</li>
+      <li><strong>O que observar:</strong> quanto tempo leva para montar a lista, se a pessoa percebe o orçamento durante a compra e o que ela faz quando o item está em falta.</li>
+      <li><strong>Como saber se funcionou:</strong> a pessoa termina a simulação dentro do orçamento e com os itens da lista, ou com uma troca consciente.</li>
+    </ul>
+
+    <!-- ===================== -->
+    <h2>O que aprendi</h2>
+    <p>A versão de 2024 apostava em muitas funcionalidades, uma identidade forte e números grandes. Revisitar o projeto me ensinou a começar pela pergunta "o que precisa ser verdade para isso funcionar?" e cortar o que não responde a ela.</p>
+    <p>Também aprendi a procurar quem já resolveu parte do problema antes de desenhar. O Menor Preço Brasil já existia e teria mudado a solução desde o primeiro dia.</p>
+
+  </article>
+
+  <nav class="next-case" aria-label="Próximo case">
+    <p>Próximo case</p>
+    <a href="g1.html">g1: ler a notícia até o fim</a>
+  </nav>
+</main>
+
+<footer class="site-foot" id="contato">
+  <div class="foot-inner">
+  <p class="ask">Quer conversar sobre produto? Me chama.</p>
+  <div class="links">
+    <a class="mail" href="mailto:isabelaabdenor@gmail.com">isabelaabdenor@gmail.com</a>
+    <a href="https://www.linkedin.com/in/isabelaabdenor/">LinkedIn</a>
+    <a href="https://www.behance.net/isabelaabdenor">Behance</a>
+    <a href="curriculo-isabela-abdenor.pdf">Currículo (PDF)</a>
+  </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>g1 — Isabela Abdenor</title>
+<meta name="description" content="Estudo independente: medição, avaliações de 819 leitores e redesenho da leitura de notícias do g1 no celular.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="g1: ler a notícia até o fim — Isabela Abdenor">
+<meta property="og:description" content="Estudo independente: medição, 819 avaliações de leitores e redesenho da leitura de notícias no celular.">
+<meta property="og:image" content="https://isabelaabdenor-ctrl.github.io/img/g1/antes-depois.png">
+<meta property="og:url" content="https://isabelaabdenor-ctrl.github.io/g1.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=3">
+</head>
+<body>
+
+<header class="site-head">
+  <a class="name" href="index.html">Isabela Abdenor</a>
+  <nav aria-label="Principal">
+    <a href="index.html#trabalhos">Trabalhos</a>
+    <a href="index.html#sobre">Sobre</a>
+    <a href="index.html#contato">Contato</a>
+  </nav>
+</header>
+
+<main>
+  <section class="case-hero">
+    <p class="kind">Estudo independente, outubro de 2026</p>
+    <h1>g1: ler a notícia até o fim no celular</h1>
+    <p class="summary">Medi como as notícias do g1 se comportam no celular, analisei o que 819 leitores escreveram nas lojas de apps e redesenhei a tela de notícia. A pesquisa derrubou a minha primeira hipótese, e foi isso que levou à solução.</p>
+
+    <dl class="case-facts">
+      <div><dt>Meu papel</dt><dd>Projeto individual, com IA no processo</dd></div>
+      <div><dt>Tipo</dt><dd>Estudo independente, sem relação com a Globo</dd></div>
+      <div><dt>Plataforma</dt><dd>Site e app de notícias no celular</dd></div>
+      <div><dt>Ferramentas</dt><dd>Claude, Figma</dd></div>
+    </dl>
+  </section>
+
+  <figure class="cover">
+    <img src="img/g1/antes-depois.png" alt="Antes e depois: no g1 hoje, o texto começa em média depois de 1,4 tela e um cartão cobre o topo; na proposta, o texto começa na primeira tela e nada fica por cima do conteúdo" width="2400" height="1520">
+  </figure>
+
+  <article class="doc">
+
+    <div class="tldr">
+      <dl>
+        <div><dt>O problema</dt><dd>Ler uma notícia do g1 no celular é mais cansativo do que deveria, e quem desiste no meio não volta.</dd></div>
+        <div><dt>O que eu descobri</dt><dd>A quantidade de anúncios está dentro do limite do mercado. O que incomoda é o comportamento deles e o caminho longo até o texto começar.</dd></div>
+        <div><dt>O que eu propus</dt><dd>Uma tela de notícia que começa pelo texto, regras para o anúncio ficar no lugar dele e uma lista que não perde o ponto onde a pessoa parou.</dd></div>
+      </dl>
+    </div>
+
+    <!-- ===================== -->
+    <h2>Por que o g1</h2>
+    <p>82% dos brasileiros leem notícias pelo celular. Em 2013 eram 23%. Só o app do g1 soma mais de 120 mil avaliações nas lojas, então um problema pequeno na leitura se repete muitas vezes por dia.</p>
+    <aside class="note"><b>Por que um estudo independente</b>Não trabalho na Globo e não tive acesso a dados internos. Usei só o que é público: o próprio site, as lojas de apps e pesquisas de mercado.</aside>
+    <p>Escolhi uma tarefa só para estudar: abrir uma notícia e ler até o fim.</p>
+
+    <!-- ===================== -->
+    <h2>Fase 1: medir antes de opinar</h2>
+    <p>Minha hipótese inicial era simples: "o g1 tem anúncio demais". Antes de desenhar qualquer coisa, decidi medir.</p>
+    <p>Abri 13 notícias no tamanho de um iPhone, em três sites, e medi três coisas: quanto a pessoa rola até o primeiro parágrafo, quantos anúncios aparecem no meio do texto e quanto da página é anúncio. Para o último ponto, usei o limite do mercado: no celular, anúncio não deve passar de 30% da altura do conteúdo.</p>
+
+    <div class="table-wrap wide">
+      <table>
+        <thead>
+          <tr><th scope="col">Site</th><th scope="col">Notícias</th><th scope="col">Telas até o 1º parágrafo</th><th scope="col">Anúncios no meio do texto</th><th scope="col">Área de anúncio na página</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">g1</th><td>5</td><td><strong>1,4</strong> (de 1,1 a 2,0)</td><td>4,8</td><td>16%</td></tr>
+          <tr><th scope="row">UOL</th><td>3</td><td>1,1</td><td>4,7</td><td>16%</td></tr>
+          <tr><th scope="row">CNN Brasil</th><td>5</td><td>1,1</td><td>1,8</td><td>7%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="source">Medição feita em 24/10/2026, sem login, na editoria internacional. A Folha ficou de fora porque as notícias estavam bloqueadas para não assinantes.</p>
+
+    <p><strong>A hipótese caiu.</strong> Com 16% da página em anúncios, o g1 fica bem abaixo do limite de 30% e igual ao UOL. O que o diferencia é o começo da página: o texto começa, em média, depois de 1,4 tela de rolagem.</p>
+    <aside class="note"><b>A mesma notícia, dois sites</b>g1 e UOL publicaram a mesma matéria, sobre um incêndio na Alemanha. No g1, o primeiro parágrafo estava a 1,6 tela do topo. No UOL, a 1,2.</aside>
+
+    <h3>O que fica entre a pessoa e o texto</h3>
+    <div class="split wide">
+      <img src="img/g1/antes-g1.png" alt="Print da notícia do g1 no celular: cartão 'Sugerida para você' sobre o topo, título, linha fina, botões e um anúncio antes do texto" width="750" height="1624" loading="lazy">
+      <ol>
+        <li><strong>Cartão por cima do topo.</strong> Ao abrir a notícia, "Sugerida para você" cobre o cabeçalho. Nas 5 notícias que abri, sugeria a mesma matéria, de outro assunto.</li>
+        <li><strong>Duas barras antes do conteúdo.</strong> A faixa de produtos da Globo fica acima da barra do g1.</li>
+        <li><strong>Foto e anúncio antes do texto.</strong> Depois da linha fina vêm os botões, uma foto do tamanho da tela e um anúncio.</li>
+        <li><strong>Cookies sem escolha.</strong> O aviso ocupa cerca de 19% da tela, só tem o botão "Prosseguir" e aparece quando a pessoa começa a rolar.</li>
+      </ol>
+    </div>
+    <p>Fiz essa leitura com as 10 heurísticas de usabilidade de Jakob Nielsen. Também anotei o que funciona: a linha fina resume bem a notícia na primeira tela, e o WhatsApp em destaque no compartilhamento combina com a forma como o brasileiro compartilha.</p>
+
+    <!-- ===================== -->
+    <h2>Fase 2: ouvir quem lê</h2>
+    <p>Medir mostra o que acontece, mas não o que incomoda. Como não tinha como fazer entrevistas, fui atrás de leitores que já tinham falado: as avaliações públicas do app g1.</p>
+    <p>Coletei as 819 avaliações com texto dos últimos 12 meses, na Google Play e na App Store. As 192 negativas foram lidas uma a uma e separadas por assunto.</p>
+
+    <div class="table-wrap wide">
+      <table>
+        <thead>
+          <tr><th scope="col">Assunto</th><th scope="col">Avaliações negativas</th><th scope="col">É problema de design?</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">App fecha, trava ou não abre</th><td>53 (28%)</td><td class="no">Não, é de engenharia</td></tr>
+          <tr><th scope="row">Linha editorial e política</th><td>36 (19%)</td><td class="no">Não, é de jornalismo</td></tr>
+          <tr><th scope="row">Anúncios que interrompem a leitura</th><td>25 (13%)</td><td class="yes">Sim</td></tr>
+          <tr><th scope="row">Jogos (Soletra, Combinado)</th><td>15 (8%)</td><td class="no">Fora do escopo</td></tr>
+          <tr><th scope="row">Volta ao início e perde onde estava</th><td>11 (6%)</td><td class="yes">Sim</td></tr>
+          <tr><th scope="row">Tamanho de letra e contraste</th><td>7 (4%)</td><td class="yes">Sim</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>Os três temas de design têm a mesma raiz: <strong>a pessoa não consegue ler até o fim</strong>.</p>
+    <aside class="note"><b>Separar o que é meu</b>Instabilidade é o maior problema do app, mas não se resolve com tela. Preferi deixar isso claro a fingir que o redesenho resolve tudo.</aside>
+
+    <h3>O achado que conecta as duas fases</h3>
+    <p>Se a quantidade de anúncios está dentro do limite, por que tanta gente reclama? As avaliações respondem: <strong>o problema não é quantos anúncios existem, é o que eles fazem</strong>. As pessoas descrevem anúncios que:</p>
+    <ul>
+      <li>abrem sozinhos enquanto elas só rolam a tela;</li>
+      <li>ficam por cima do texto;</li>
+      <li>redirecionam para sites de apostas;</li>
+      <li>param a música que estava tocando.</li>
+    </ul>
+    <p>Sobre perder o lugar, uma pessoa resumiu: "tenho que rolar todas as notícias já visualizadas para continuar lendo… aí desisto de ler".</p>
+
+    <!-- ===================== -->
+    <h2>O desafio</h2>
+    <p><strong>Como ajudar a pessoa a ler a notícia até o fim no celular, sem tirar os anúncios que pagam o jornalismo?</strong></p>
+    <p>A restrição importa. Uma proposta que simplesmente remove anúncios é fácil de desenhar e impossível de aprovar.</p>
+    <aside class="note"><b>Referências</b>Olhei apps de notícia elogiados pela leitura, como Apple News e o app do New York Times. Os dois deixam o ajuste de letra a um toque, na própria notícia.</aside>
+
+    <!-- ===================== -->
+    <h2>O redesenho</h2>
+    <p>Primeiro, a comparação direta. Arraste a barra para ver a mesma tela antes e depois.</p>
+
+    <div class="compare wide">
+      <div class="compare-frame" style="--pos: 50%">
+        <img src="img/g1/antes-g1.png" alt="Hoje: cartão 'Sugerida para você' sobre o topo, título, botões e um anúncio antes do texto" width="750" height="1624">
+        <div class="c-depois"><img src="img/g1/depois-tela.png" alt="Proposta: uma barra de menu, título, linha fina e o primeiro parágrafo já visível" width="750" height="1624"></div>
+        <div class="c-handle" aria-hidden="true"><span></span></div>
+        <span class="c-lab l" aria-hidden="true">Hoje</span>
+        <span class="c-lab r" aria-hidden="true">Proposta</span>
+        <input type="range" min="0" max="100" value="50" aria-label="Comparar a tela de hoje com a proposta">
+      </div>
+      <ul class="compare-notes">
+        <li><b>Hoje</b>O texto começa depois de 1,4 tela de rolagem, em média. Antes dele vêm um cartão por cima do topo, duas barras de menu, botões, foto e anúncio.</li>
+        <li><b>Proposta</b>Título, linha fina e o primeiro parágrafo cabem na primeira tela. Nada fica por cima do conteúdo.</li>
+      </ul>
+    </div>
+
+    <p>Depois, o fluxo completo em quatro telas, todas com conteúdo fictício para não inventar fatos sobre notícias reais. Os números amarelos se referem às decisões listadas abaixo das telas.</p>
+
+    <ul class="screens wide">
+      <li><img src="img/g1/tela-a.png" alt="Tela A: notícia com uma barra de menu só, linha de progresso, título, linha fina, botão Aa e o primeiro parágrafo já visível" width="375" height="812" loading="lazy"><p class="cap"><b>A. Primeira tela</b>O texto começa sem rolar.</p></li>
+      <li><img src="img/g1/tela-b.png" alt="Tela B: notícia rolando, com foto ilustrada depois dos primeiros parágrafos e um espaço de anúncio fixo com rótulo Publicidade" width="375" height="812" loading="lazy"><p class="cap"><b>B. Rolando</b>Anúncio no lugar dele.</p></li>
+      <li><img src="img/g1/tela-c.png" alt="Tela C: painel Ajustes de leitura com tamanho do texto em cinco passos e tema claro, escuro ou do celular" width="375" height="812" loading="lazy"><p class="cap"><b>C. Ajustes de leitura</b>Letra e tema a um toque.</p></li>
+      <li><img src="img/g1/tela-d.png" alt="Tela D: lista de notícias com etiquetas Lida e Você parou aqui, e aviso Você voltou para onde parou com botão Ir para o topo" width="375" height="812" loading="lazy"><p class="cap"><b>D. De volta à lista</b>No mesmo ponto onde parou.</p></li>
+    </ul>
+
+    <h3>As decisões</h3>
+    <ol>
+      <li><strong>O texto começa na primeira tela.</strong> Título, linha fina e primeiro parágrafo cabem nos primeiros 812 px.</li>
+      <li><strong>Uma barra só.</strong> A faixa de produtos da Globo vai para dentro do menu. São quase 50 px a mais para o texto.</li>
+      <li><strong>Linha de progresso.</strong> Mostra quanto falta para terminar e ajuda a decidir continuar.</li>
+      <li><strong>Nada por cima do topo.</strong> Sugestões de outras matérias vão para o fim do texto.</li>
+      <li><strong>Anúncio no lugar dele.</strong> Espaço com altura reservada e rótulo "Publicidade". Não cobre o texto e não empurra o parágrafo quando carrega.</li>
+      <li><strong>A foto espera a leitura começar.</strong> Ela vem depois dos primeiros parágrafos.</li>
+      <li><strong>Aa ao lado do autor.</strong> O ajuste de letra fica a um toque, como pedem as avaliações.</li>
+      <li><strong>Tema escolhido pela pessoa.</strong> Claro, escuro ou igual ao celular.</li>
+      <li><strong>Volta para o mesmo ponto.</strong> Ao sair da notícia, a lista abre onde a pessoa estava.</li>
+      <li><strong>O que foi lido fica marcado.</strong> A etiqueta "Lida" e o aviso com "Ir para o topo" mostram onde a pessoa está.</li>
+    </ol>
+
+    <div class="finding fix">
+      <h3>Regras para anúncios na leitura</h3>
+      <ul>
+        <li>Nunca por cima do texto.</li>
+        <li>Altura reservada antes de carregar, para o texto não pular.</li>
+        <li>Nada abre ou redireciona sem um toque da pessoa.</li>
+        <li>Propaganda em vídeo começa sem som e não pausa o áudio do celular.</li>
+        <li>A quantidade de espaços continua a de hoje. Muda o comportamento, não a receita.</li>
+      </ul>
+    </div>
+
+    <!-- ===================== -->
+    <h2>Como usei IA no processo</h2>
+    <p>Fiz este estudo com o Claude, a IA da Anthropic, como parceiro de trabalho. A divisão foi clara: eu escolhi o problema, defini as perguntas e o caminho da pesquisa e decidi o que entrava no redesenho. A IA executou as partes repetitivas e me ajudou a ganhar escala.</p>
+    <ul>
+      <li><strong>Medição automatizada:</strong> um navegador automático abriu as notícias no tamanho de um iPhone e mediu rolagem e anúncios nos três sites, do mesmo jeito em todas.</li>
+      <li><strong>Coleta e organização das avaliações:</strong> as 819 avaliações foram baixadas das lojas e agrupadas por assunto para eu analisar.</li>
+      <li><strong>Telas:</strong> as quatro telas foram produzidas a partir das decisões do estudo, com a minha revisão.</li>
+    </ul>
+    <aside class="note"><b>Por que contar isso</b>Usar IA bem não é pedir uma resposta pronta. É saber o que perguntar, conferir o que volta e decidir o que fica.</aside>
+    <p>Sem IA, este estudo levaria semanas. Com ela, a parte braçal virou horas, e o meu tempo ficou para o que importa: interpretar os dados e tomar as decisões.</p>
+
+    <!-- ===================== -->
+    <h2>Como eu validaria</h2>
+    <p>O próximo passo é testar o protótipo com cinco pessoas que leem notícia no celular toda semana. Cada uma leria a mesma notícia na versão atual e na nova.</p>
+    <ul>
+      <li><strong>Até onde a pessoa lê:</strong> quantas chegam ao último parágrafo em cada versão.</li>
+      <li><strong>Quanto tempo leva para começar:</strong> os segundos até o primeiro parágrafo aparecer na tela.</li>
+      <li><strong>Percepção do anúncio:</strong> se a pessoa lembra de algum anúncio ter atrapalhado.</li>
+    </ul>
+
+    <h2>Limites do estudo</h2>
+    <ul>
+      <li><strong>Medição de um dia só.</strong> Os anúncios mudam a cada visita.</li>
+      <li><strong>Avaliações de loja não representam a média dos leitores.</strong> Quem escreve costuma estar muito satisfeito ou muito irritado.</li>
+      <li><strong>App e site são produtos diferentes.</strong> As avaliações são do app e a medição foi do site no celular. Os problemas de leitura se repetem nos dois, mas não são idênticos.</li>
+    </ul>
+
+    <!-- ===================== -->
+    <h2>O que aprendi</h2>
+    <p>A medição derrubou a hipótese que eu tinha certeza que estava certa. Se eu tivesse desenhado direto, teria proposto "menos anúncios", que é a solução mais óbvia e a menos viável.</p>
+    <p>Juntar números com a fala das pessoas mostrou o que nenhum dos dois mostraria sozinho: o leitor aceita o anúncio que fica no lugar dele, e o que ele não aceita é ser interrompido.</p>
+
+    <p class="source">Fontes: <a href="https://www.jornalopcao.com.br/colunas-e-blogs/imprensa/pesquisa-mostra-que-brasileiros-trocaram-o-jornalismo-impresso-pelo-jornalismo-digital-718222/">Digital News Report 2025, Reuters Institute (via Jornal Opção)</a>; <a href="https://support.google.com/webtools/answer/7073774">critério de densidade de anúncios da Coalition for Better Ads (via Google)</a>; avaliações públicas do app g1 na Google Play e na App Store, de 24/10/2025 a 23/10/2026.</p>
+
+  </article>
+
+  <nav class="next-case" aria-label="Próximo case">
+    <p>Próximo case</p>
+    <a href="pet.html">Hotel para Pet</a>
+  </nav>
+</main>
+
+<footer class="site-foot" id="contato">
+  <div class="foot-inner">
+  <p class="ask">Quer conversar sobre produto? Me chama.</p>
+  <div class="links">
+    <a class="mail" href="mailto:isabelaabdenor@gmail.com">isabelaabdenor@gmail.com</a>
+    <a href="https://www.linkedin.com/in/isabelaabdenor/">LinkedIn</a>
+    <a href="https://www.behance.net/isabelaabdenor">Behance</a>
+    <a href="curriculo-isabela-abdenor.pdf">Currículo (PDF)</a>
+  </div>
+  </div>
+</footer>
+
+
+<script>
+  // antes e depois: a barra (input range) move o recorte da proposta
+  document.querySelectorAll('.compare-frame').forEach(frame => {
+    const range = frame.querySelector('input');
+    const set = () => frame.style.setProperty('--pos', range.value + '%');
+    range.addEventListener('input', set);
+    set();
+  });
+</script>
+</body>
+</html>

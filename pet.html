@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hotel para Pet — Isabela Abdenor</title>
+<meta name="description" content="Case Hotel para Pet: um app para encontrar hospedagem confiável para o pet. Projeto da faculdade, da pesquisa com 41 donos de pet à interface.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hotel para Pet — Isabela Abdenor">
+<meta property="og:description" content="Pesquisa com 41 donos de pet mostrou que o problema não era achar um hotel, e sim confiar nele.">
+<meta property="og:image" content="https://isabelaabdenor-ctrl.github.io/img/pet/capa.webp">
+<meta property="og:url" content="https://isabelaabdenor-ctrl.github.io/pet.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=3">
+</head>
+<body>
+
+<header class="site-head">
+  <a class="name" href="index.html">Isabela Abdenor</a>
+  <nav aria-label="Principal">
+    <a href="index.html#trabalhos">Trabalhos</a>
+    <a href="index.html#sobre">Sobre</a>
+    <a href="index.html#contato">Contato</a>
+  </nav>
+</header>
+
+<main>
+  <section class="case-hero">
+    <p class="kind">Projeto da faculdade, 2023</p>
+    <h1>Hotel para Pet: deixar o cachorro com alguém de confiança</h1>
+    <p class="summary">Um app que reúne hotéis para pet e ajuda o dono a escolher onde deixar o animal quando precisa viajar. Projeto da faculdade, com tema proposto pelo professor.</p>
+
+    <dl class="case-facts">
+      <div><dt>Meu papel</dt><dd>Da pesquisa à interface</dd></div>
+      <div><dt>Contexto</dt><dd>Bacharelado em Design Gráfico, FAESA</dd></div>
+      <div><dt>Plataforma</dt><dd>App mobile</dd></div>
+      <div><dt>Ferramentas</dt><dd>Figma</dd></div>
+    </dl>
+  </section>
+
+  <figure class="cover">
+    <img src="img/pet/capa.webp" alt="Três telas do app: minhas reservas, lista de hotéis com fotos, nota e preço, e tela de login" width="1200" height="1039">
+  </figure>
+
+  <article class="doc">
+
+    <div class="tldr">
+      <dl>
+        <div><dt>O problema</dt><dd>Hotéis para pet existem, mas pouca gente sabe onde encontrar, e muitos donos não confiam em deixar o animal com estranhos.</dd></div>
+        <div><dt>O que eu fiz</dt><dd>Pesquisa com 41 donos de pet, persona, fluxos para os dois lados do app (dono de pet e dono de hotel), guia de estilo e interface.</dd></div>
+        <div><dt>O que eu aprendi</dt><dd>O app não disputa espaço com outros hotéis. Ele disputa com a família, que é com quem as pessoas já deixam o pet hoje.</dd></div>
+      </dl>
+    </div>
+
+    <!-- ===================== -->
+    <h2>O briefing</h2>
+    <p>Muita gente adotou um animal durante a pandemia. Com a volta dos compromissos fora de casa, apareceu um problema novo: onde deixar o pet numa viagem? Hotéis para pet existem, mas ainda são pouco conhecidos.</p>
+    <p>A proposta do professor era um aplicativo ou site que reunisse esses hotéis e facilitasse a reserva. Antes de desenhar qualquer tela, eu quis entender se o problema era mesmo encontrar o hotel.</p>
+
+    <!-- ===================== -->
+    <h2>A pesquisa</h2>
+    <p>Fiz um formulário online para donos de pet e recebi 41 respostas. Perguntei como eles viajam, com quem deixam o animal e se deixariam com uma empresa.</p>
+
+    <div class="facts-grid">
+      <div class="fact">
+        <div class="n">80%</div>
+        <p>não costumam levar o pet quando viajam. A necessidade de deixar o animal com alguém existe.</p>
+      </div>
+      <div class="fact">
+        <div class="n">73%</div>
+        <p>deixariam o pet com uma empresa de cuidados. Os outros 27% não deixariam.</p>
+      </div>
+      <div class="fact">
+        <div class="n">82%</div>
+        <p>marcaram smartphone na pergunta sobre aparelhos, contra 17% que marcaram computador.</p>
+      </div>
+    </div>
+
+    <p>Duas coisas mudaram o rumo do projeto. A primeira: quem não deixaria o pet com uma empresa citou desconfiança e medo de maus-tratos. A segunda: a resposta mais comum para "com quem você deixa o pet hoje" foi a família, bem à frente de hotéis.</p>
+    <aside class="note"><b>O que a pesquisa mudou</b>Eu comecei achando que o problema era encontrar um hotel. A pesquisa mostrou que o problema é confiar nele.</aside>
+    <p>Ou seja, o app não compete com outros hotéis. Compete com a mãe, o irmão ou o vizinho, que a pessoa já conhece. Ele precisa passar a mesma segurança.</p>
+    <p>O dado do celular também reforça a escolha por um app mobile, em vez de um site.</p>
+
+    <figure class="figure wide">
+      <img src="img/pet/pesquisa.webp" alt="Infográfico com os resultados da pesquisa de campo: uso de tecnologia, viagens por ano, aparelhos, quantidade e tipos de animais, com quem deixam os pets e objeções" loading="lazy" width="1200" height="1595">
+      <figcaption>Resultados da pesquisa de campo com 41 donos de pet.</figcaption>
+    </figure>
+
+    <!-- ===================== -->
+    <h2>Para quem</h2>
+    <p>Montei a persona a partir das respostas: uma estudante de 21 anos, casada, que mora em Jardim Camburi, em Vitória. As preocupações dela são as mesmas que apareceram na pesquisa.</p>
+    <ul>
+      <li>Como o pet vai ser tratado quando ela não estiver por perto.</li>
+      <li>O cachorro é bravo com estranhos, e ela tem medo de que aconteça um acidente.</li>
+      <li>Ela quer ver como o pet está enquanto viaja, para ter certeza de que está tudo bem.</li>
+    </ul>
+
+    <figure class="figure wide">
+      <img src="img/pet/persona.webp" alt="Persona com foto, dados e preocupações, seguida do guia de estilo com tipografia Roboto, paleta laranja e marrom, botões e ícones" loading="lazy" width="1200" height="1858">
+      <figcaption>Persona e guia de estilo.</figcaption>
+    </figure>
+
+    <!-- ===================== -->
+    <h2>Dois apps em um</h2>
+    <p>Um app de reserva tem dois lados: quem reserva e quem recebe. Desenhei os fluxos dos dois. O dono do pet busca, escolhe, reserva e paga. O dono do hotel cadastra o hotel e acompanha as reservas.</p>
+    <aside class="note"><b>Uma barra para cada um</b>Os dois públicos usam o mesmo app, mas não fazem as mesmas coisas. O dono de pet vê "Reservas". O dono de hotel vê "Novo hotel". Chat e perfil são iguais para os dois.</aside>
+    <p>O chat aparece na barra principal para os dois públicos. É a resposta mais direta à preocupação da persona: poder perguntar como o pet está a qualquer momento.</p>
+
+    <figure class="figure wide">
+      <img src="img/pet/fluxos.webp" alt="Fluxogramas de experiência do dono de pet e do dono de hotel" loading="lazy" width="1200" height="3286">
+      <figcaption>Fluxos do dono de pet (acima) e do dono de hotel (abaixo).</figcaption>
+    </figure>
+
+    <figure class="figure wide">
+      <img src="img/pet/navegacao.webp" alt="Barras de navegação para dono de hotel e dono de pet, e exemplo de espaçamento no card de hotel" loading="lazy" width="1200" height="1167">
+      <figcaption>Barras de navegação dos dois públicos e a régua de espaçamento aplicada ao card de hotel.</figcaption>
+    </figure>
+
+    <!-- ===================== -->
+    <h2>A interface</h2>
+    <p>A lista de hotéis mostra foto, distância, nota e preço da diária. A tela "Minhas reservas" reúne as estadias do usuário, e o login aceita conta Google ou Facebook, para não exigir mais uma senha.</p>
+
+    <figure class="figure wide">
+      <img src="img/pet/telas.webp" alt="Mais telas do app em alta fidelidade" loading="lazy">
+    </figure>
+
+    <!-- ===================== -->
+    <h2>O que eu faria diferente</h2>
+    <p>Olhando hoje, a pesquisa apontou a confiança como o maior obstáculo, mas a interface ainda trata o hotel como um produto comum.</p>
+
+    <div class="finding fix">
+      <h3>Mostrar sinais de confiança na lista, não só preço</h3>
+      <p>O card do hotel mostra nota, distância e preço. Para quem tem medo de maus-tratos, isso não basta. Eu traria para o card o que responde ao medo: se o hotel manda fotos durante a estadia, se tem veterinário, se aceita cães bravos e o que outros donos disseram.</p>
+    </div>
+    <aside class="note"><b>A família como referência</b>A pergunta que guiaria o redesenho: o que faz alguém confiar na irmã para cuidar do cachorro? Conhecer a pessoa, ver o lugar e receber notícias.</aside>
+
+    <div class="finding fix">
+      <h3>Começar por um lado só</h3>
+      <p>O fluxo do dono de hotel é bem maior que o do dono de pet. Numa primeira versão, eu focaria no dono de pet e cadastraria os hotéis manualmente, para testar se as pessoas reservam antes de construir o painel completo.</p>
+    </div>
+
+    <div class="finding fix">
+      <h3>Testar antes de fechar a interface</h3>
+      <p>A pesquisa foi feita antes das telas, mas as telas não foram testadas com ninguém. O próximo passo seria pedir para cinco donos de pet escolherem um hotel no protótipo e contarem em voz alta por que confiariam ou não nele.</p>
+    </div>
+
+    <!-- ===================== -->
+    <h2>O que aprendi</h2>
+    <p>Foi o primeiro projeto em que a pesquisa mudou a pergunta. Comecei querendo resolver "onde encontrar um hotel" e terminei entendendo que o trabalho era resolver "em quem confiar".</p>
+    <p>Também foi a primeira vez que desenhei para dois públicos ao mesmo tempo, e aprendi que cada lado precisa da sua própria navegação, mesmo dentro do mesmo app.</p>
+
+  </article>
+
+  <nav class="next-case" aria-label="Próximo case">
+    <p>Próximo case</p>
+    <a href="zei.html">Zei</a>
+  </nav>
+</main>
+
+<footer class="site-foot" id="contato">
+  <div class="foot-inner">
+  <p class="ask">Quer conversar sobre produto? Me chama.</p>
+  <div class="links">
+    <a class="mail" href="mailto:isabelaabdenor@gmail.com">isabelaabdenor@gmail.com</a>
+    <a href="https://www.linkedin.com/in/isabelaabdenor/">LinkedIn</a>
+    <a href="https://www.behance.net/isabelaabdenor">Behance</a>
+    <a href="curriculo-isabela-abdenor.pdf">Currículo (PDF)</a>
+  </div>
+  </div>
+</footer>
+
+</body>
+</html>
