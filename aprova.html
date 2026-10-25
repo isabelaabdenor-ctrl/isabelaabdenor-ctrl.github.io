@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aprova — Isabela Abdenor</title>
+<meta name="description" content="Projeto conceito: um produto para agência e cliente aprovarem peças, com pesquisa, teste de usabilidade, avaliação heurística e telas finais.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Aprova: quando a peça muda depois de aprovada — Isabela Abdenor">
+<meta property="og:description" content="Pesquisa, teste com 5 pessoas e redesenho de um produto de aprovação de peças entre agência e cliente.">
+<meta property="og:image" content="https://isabelaabdenor-ctrl.github.io/img/aprova/capa.png">
+<meta property="og:url" content="https://isabelaabdenor-ctrl.github.io/aprova.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=4">
+</head>
+<body>
+
+<header class="site-head">
+  <a class="name" href="index.html">Isabela Abdenor</a>
+  <nav aria-label="Principal">
+    <a href="index.html#trabalhos">Trabalhos</a>
+    <a href="index.html#sobre">Sobre</a>
+    <a href="index.html#contato">Contato</a>
+  </nav>
+</header>
+
+<main>
+  <section class="case-hero">
+    <p class="kind">Projeto conceito, outubro de 2026</p>
+    <h1>Aprova: quando a peça muda depois de aprovada</h1>
+    <p class="summary">Desenhei um produto para agência e cliente aprovarem peças num lugar só. A pesquisa mostrou que o problema não era o canal, e sim saber qual versão vale. O teste mostrou que avisar que a peça mudou não basta: é preciso dizer o que acontece com a aprovação.</p>
+
+    <dl class="case-facts">
+      <div><dt>Meu papel</dt><dd>Projeto individual, com IA no processo</dd></div>
+      <div><dt>Tipo</dt><dd>Projeto conceito: o Aprova não é um produto real</dd></div>
+      <div><dt>Plataforma</dt><dd>Celular para quem aprova, computador para quem envia</dd></div>
+      <div><dt>Ferramentas</dt><dd>Figma, Claude</dd></div>
+    </dl>
+  </section>
+
+  <figure class="cover">
+    <img src="img/aprova/capa.png" alt="Tela do Aprova no computador com a v4 aguardando aprovação e a v3 aprovada, e no celular o aviso 'Sua aprovação da v3 não vale para a v4'" width="2400" height="1500">
+  </figure>
+
+  <article class="doc">
+
+    <div class="tldr">
+      <dl>
+        <div><dt>O problema</dt><dd>Peças são aprovadas pelo WhatsApp e por e-mail, e ninguém tem certeza de qual versão vale nem de quem aprovou.</dd></div>
+        <div><dt>O que eu descobri</dt><dd>Avisar que a peça mudou não é suficiente. Com o aviso na tela, 4 de 5 pessoas não sabiam se a aprovação antiga continuava valendo.</dd></div>
+        <div><dt>O que eu propus</dt><dd>Um link de revisão sem login, comentário preso no ponto da peça, comprovante de aprovação e uma regra explícita: a aprovação vale só para a versão aprovada.</dd></div>
+      </dl>
+    </div>
+
+    <!-- ===================== -->
+    <h2>Por que esse problema</h2>
+    <p>Conheço esse problema de perto pela direção de arte: a peça vai pelo WhatsApp, volta com "muda a cor ali" e vira "final_v3_AGORAVAI.png".</p>
+    <p>Os números confirmam que não é só impressão. Num estudo global com 1.034 profissionais de marketing e agências, uma ideia leva em média <strong>5 rodadas até ser aprovada</strong>, contra 3 em 2007. Só 43% das agências dizem que as pessoas certas aprovam, e só 30% recebem feedback claro do cliente.</p>
+    <aside class="note"><b>Os limites desses números</b>O estudo mede a aprovação de ideias de campanha, não de cada peça, e a amostra não é brasileira. Uso os números para mostrar o tamanho do problema, não como meta do produto.</aside>
+    <p>No Brasil, essa conversa acontece no WhatsApp: 97% dos usuários abrem o app todo dia, e 82% já falaram com empresas por ele.</p>
+
+    <!-- ===================== -->
+    <h2>Fase 1: ouvir quem envia e quem aprova</h2>
+    <p>Conversei com 5 pessoas dos dois lados: uma designer de agência, um designer freelancer, uma profissional de atendimento, um gerente de marketing e uma coordenadora de comunicação. Perguntei sobre a última peça que cada uma aprovou ou mandou aprovar, do começo ao fim.</p>
+    <p>Nas 5 conversas, apareceram os mesmos quatro padrões:</p>
+    <ol>
+      <li><strong>O feedback chega espalhado.</strong> WhatsApp, e-mail, áudio, ligação, reunião. Na agência, alguém vira tradutor: "Meu trabalho é reunir tudo e transformar em uma solicitação que a criação consiga entender."</li>
+      <li><strong>Ninguém sabe qual versão vale.</strong> A "final" é deduzida pelo nome do arquivo ou pela última mensagem. Isso já custou caro: uma peça foi publicada com o preço antigo, e o jurídico revisou um arquivo diferente do que o comercial revisava.</li>
+      <li><strong>Não está claro quem dá a palavra final.</strong> Outra pessoa muda o que já tinha sido aprovado: "Fizemos duas versões sem saber qual orientação seguir."</li>
+      <li><strong>As ferramentas são abandonadas por causa do atrito.</strong> Quando o cliente precisa criar conta, ele volta para a mensagem.</li>
+    </ol>
+    <aside class="note"><b>A hipótese caiu pela metade</b>Eu achava que o problema era o cliente brasileiro só aprovar pelo WhatsApp. Os clientes corporativos aprovavam por e-mail e Teams. O canal muda; o que se repete é a falta de um registro confiável de versão e de aprovação.</aside>
+
+    <h3>O que já existe no mercado</h3>
+    <p>Antes de desenhar, olhei como o Filestage e o Frame.io resolvem isso. Segundo a documentação de ajuda dos dois, eles <strong>já deixam o cliente revisar sem criar conta</strong>. Então "aprovar sem login" não seria diferencial.</p>
+    <p>Na documentação pública que consultei, nenhum dos dois explica <strong>o que acontece com a aprovação quando sobe uma versão nova</strong>. Foi esse o espaço que o Aprova passou a ocupar.</p>
+    <aside class="note"><b>Até os líderes tropeçam no link</b>No fórum oficial do Frame.io, há relatos de 2025 de clientes externos que não conseguiam comentar pelo link de revisão. O momento em que o cliente abre o link é o ponto mais frágil do fluxo.</aside>
+
+    <!-- ===================== -->
+    <h2>O desafio</h2>
+    <p><strong>Como fazer o cliente comentar e aprovar direto na peça, por um link, sem criar conta, e deixar registrado qual versão foi aprovada e por quem?</strong></p>
+
+    <h3>O MVP</h3>
+    <p>Priorizei por impacto e esforço. Entrou o que resolvia os quatro padrões com menos atrito:</p>
+    <ul>
+      <li><strong>Link de revisão sem login</strong>, feito para ser mandado no WhatsApp e aberto no celular.</li>
+      <li><strong>Comentário preso no ponto da peça</strong>, na versão em que foi feito.</li>
+      <li><strong>Aprovador final</strong> definido antes de enviar: outras pessoas comentam, só uma aprova.</li>
+      <li><strong>Selo de aprovação</strong> com quem aprovou e quando.</li>
+      <li><strong>Aviso</strong> quando a peça muda depois de aprovada.</li>
+    </ul>
+    <p>Ficaram de fora, por enquanto: revisão por áreas com papéis (jurídico, comercial), comparação lado a lado e importar comentários do WhatsApp. São importantes, mas caras, e o MVP precisava primeiro provar que o cliente usa o link.</p>
+
+    <!-- ===================== -->
+    <h2>Fase 2: protótipo</h2>
+    <p>Montei um protótipo clicável de baixa fidelidade no Figma, com 22 telas principais e um fluxo para cada tarefa de teste. Deixei em cinza de propósito: a ideia era testar o fluxo antes de cuidar do visual.</p>
+
+    <ul class="screens wide">
+      <li><img src="img/aprova/lofi-revisao.png" alt="Wireframe: o cliente abre o link e vê a peça com os botões Pedir ajuste e Aprovar" width="390" height="844" loading="lazy"><p class="cap"><b>Revisão</b>O cliente abre o link no celular.</p></li>
+      <li><img src="img/aprova/lofi-comentar.png" alt="Wireframe: um pino numerado sobre o preço e o comentário 'Trocar o preço para R$ 89,90'" width="390" height="844" loading="lazy"><p class="cap"><b>Comentar</b>O ajuste fica preso no ponto da peça.</p></li>
+      <li><img src="img/aprova/lofi-enviado.png" alt="Wireframe: confirmação Ajustes enviados" width="390" height="844" loading="lazy"><p class="cap"><b>Enviado</b>A nova versão chega no mesmo link.</p></li>
+      <li><img src="img/aprova/antes-aviso.png" alt="Wireframe: aviso tracejado 'Esta peça mudou depois da sua aprovação'" width="390" height="844" loading="lazy"><p class="cap"><b>Mudou</b>O aviso da primeira versão.</p></li>
+    </ul>
+
+    <!-- ===================== -->
+    <h2>Fase 3: teste de usabilidade</h2>
+    <p>Testei com 5 pessoas que não tinham participado das conversas: 3 do lado da agência e 2 do lado do cliente. Depois de cada tarefa, a pessoa dava uma nota de facilidade de 1 a 7.</p>
+
+    <div class="table-wrap wide">
+      <table>
+        <thead>
+          <tr><th scope="col">Tarefa</th><th scope="col">Nota média (1 a 7)</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Pedir e conferir ajustes</th><td>6,5 a 7,0</td></tr>
+          <tr><th scope="row">Encontrar a peça e ver o status</th><td>6,7</td></tr>
+          <tr><th scope="row">Consultar o histórico e a situação final</th><td>5,0</td></tr>
+          <tr><th scope="row">Cliente: perceber que a peça mudou depois de aprovar</th><td class="no"><strong>4,5</strong></td></tr>
+          <tr><th scope="row">Agência: identificar uma alteração depois da aprovação</th><td class="no"><strong>4,0</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>A base do fluxo funcionou. As duas notas abaixo de 5 caíram no mesmo momento: <strong>a peça mudou depois de aprovada</strong>.</p>
+    <p>O detalhe que mais me ensinou: o aviso de mudança <strong>já existia</strong> no protótipo. Mesmo assim, 2 das 5 pessoas tiveram dificuldade para perceber a mudança, e 4 de 5 disseram não ter certeza se a aprovação anterior continuava valendo. Uma participante resumiu: "O mais confuso foi entender se a aprovação anterior continuava válida depois de uma modificação."</p>
+    <aside class="note"><b>Limitações do teste</b>As tarefas da agência foram adaptadas do roteiro original, e o tempo de cada tarefa não foi medido. Com 5 pessoas, escrevo "4 de 5", não porcentagem.</aside>
+
+    <!-- ===================== -->
+    <h2>O redesenho</h2>
+    <p>O problema não pedia funcionalidade nova. Pedia que a tela dissesse <strong>a consequência</strong>, e não só o fato. Arraste a barra para comparar o aviso antes e depois do teste.</p>
+
+    <div class="compare wide">
+      <div class="compare-frame" style="--pos: 50%">
+        <img src="img/aprova/antes-aviso.png" alt="Antes: faixa tracejada 'Esta peça mudou depois da sua aprovação'" width="390" height="844">
+        <div class="c-depois"><img src="img/aprova/depois-aviso.png" alt="Depois: manchete 'Sua aprovação da v3 não vale para a v4. Revise e aprove de novo.'" width="390" height="844"></div>
+        <div class="c-handle" aria-hidden="true"><span></span></div>
+        <span class="c-lab l" aria-hidden="true">Antes</span>
+        <span class="c-lab r" aria-hidden="true">Depois</span>
+        <input type="range" min="0" max="100" value="50" aria-label="Comparar o aviso antes e depois do teste">
+      </div>
+      <ul class="compare-notes">
+        <li><b>Antes</b>Uma faixa tracejada, com o mesmo peso do resto, dizia que a peça tinha mudado. Não dizia o que fazer.</li>
+        <li><b>Depois</b>O aviso vira a manchete e diz a consequência: "Sua aprovação da v3 não vale para a v4. Revise e aprove de novo."</li>
+      </ul>
+    </div>
+
+    <ol>
+      <li><strong>A peça diz qual versão está na tela.</strong> "Você está vendo: v4 · não aprovada", com abas para ver cada versão.</li>
+      <li><strong>As duas versões aparecem lado a lado no status.</strong> A v4 pendente e a v3 aprovada, que "não vale para a v4".</li>
+      <li><strong>O histórico virou linha do tempo.</strong> Quem fez o quê, quando, e o estado de cada versão: atual, aprovada ou substituída.</li>
+      <li><strong>A aprovação virou comprovante.</strong> Peça, versão, quem, quando e um código, salvo no link. A agência recebe um aviso e pode baixar a versão aprovada.</li>
+    </ol>
+
+    <div class="pair wide">
+      <figure class="figure"><img src="img/aprova/antes-detalhe.png" alt="Antes: detalhe da peça com cartão tracejado 'v4 aguardando Rafael' e histórico em lista" width="1440" height="900" loading="lazy"><figcaption>Antes: "a aprovação da v3 continua no histórico" podia ser lido como "continua valendo".</figcaption></figure>
+      <figure class="figure"><img src="img/aprova/depois-detalhe.png" alt="Depois: abas de versão, cartão com v4 pendente e v3 aprovada que não vale para a v4, e linha do tempo" width="1440" height="900" loading="lazy"><figcaption>Depois: as duas versões lado a lado, abas de versão e linha do tempo.</figcaption></figure>
+    </div>
+
+    <!-- ===================== -->
+    <h2>Validando sem novos participantes</h2>
+    <p>Não consegui recrutar pessoas novas para um reteste. Em vez de pular a validação, troquei de método: fiz uma <strong>avaliação heurística</strong>, com as heurísticas de Nielsen que se aplicavam a essas telas, e um <strong>percurso cognitivo</strong> das duas tarefas que falharam, comparando a versão antiga com a nova.</p>
+
+    <div class="table-wrap wide">
+      <table>
+        <thead>
+          <tr><th scope="col">Problemas por gravidade</th><th scope="col">v1</th><th scope="col">v2</th><th scope="col">v2.1</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Catastróficos</th><td>1</td><td>0</td><td>0</td></tr>
+          <tr><th scope="row">Graves</th><td>4</td><td>1</td><td>0</td></tr>
+          <tr><th scope="row">Pequenos</th><td>4</td><td>1</td><td>0</td></tr>
+          <tr><th scope="row">Cosméticos</th><td>1</td><td>3</td><td>1</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>A avaliação achou algo que o teste não mostrou: <strong>na v1, depois que uma versão nova subia, o painel continuava mostrando "Aprovada"</strong>. A agência poderia publicar o arquivo não aprovado. Era um estado que eu simplesmente não tinha desenhado.</p>
+    <p>Ela também achou problemas na própria v2. O principal: com uma versão nova pendente, a agência não conseguia baixar a versão aprovada. Na v2.1, corrigi isso, deixei cada cor de status com um significado só e ajustei os textos com contraste abaixo do mínimo de acessibilidade.</p>
+    <aside class="note"><b>Os limites desse método</b>O recomendado são de 3 a 5 avaliadores. Aqui fui só eu, que também desenhei as telas. A avaliação não substitui o reteste com usuários, que continua sendo o próximo passo.</aside>
+
+    <!-- ===================== -->
+    <h2>O visual final</h2>
+    <p>Com o fluxo validado, desenhei a versão em alta fidelidade, partindo de uma pergunta: <strong>o que a cor precisa dizer?</strong></p>
+
+    <ul class="screens wide">
+      <li><img src="img/aprova/ui-revisao.png" alt="Tela final: a Agência Norte pediu aprovação do Post Black Friday v3, com os botões Pedir ajuste e Aprovar v3" width="780" height="1688" loading="lazy"><p class="cap"><b>Revisão</b>A peça em primeiro plano.</p></li>
+      <li><img src="img/aprova/ui-comentar.png" alt="Tela final: pino amarelo sobre o preço e o comentário 'Trocar o preço para R$ 89,90'" width="780" height="1688" loading="lazy"><p class="cap"><b>Comentar um ponto</b>Uma ação principal: enviar.</p></li>
+      <li><img src="img/aprova/ui-mudou.png" alt="Tela final: aviso amarelo 'Sua aprovação da v3 não vale para a v4' acima da peça v4" width="780" height="1688" loading="lazy"><p class="cap"><b>Mudou depois de aprovada</b>O único amarelo forte do produto.</p></li>
+      <li><img src="img/aprova/ui-comprovante.png" alt="Tela final: Versão 3 aprovada, com comprovante de aprovação e código" width="780" height="1688" loading="lazy"><p class="cap"><b>Comprovante</b>A aprovação fica registrada.</p></li>
+    </ul>
+
+    <ul>
+      <li><strong>A peça é a estrela.</strong> Quem aprova está ali para olhar a peça do cliente, que é o elemento mais colorido da tela. O resto da tela fica em neutros esverdeados e só usa cor quando a cor quer dizer alguma coisa.</li>
+      <li><strong>60-30-10.</strong> Cerca de 60% da tela é base neutra, 30% é verde-musgo (texto e ação principal) e 10% são acentos. Quando o acento é raro, ele chama atenção.</li>
+      <li><strong>Cada cor tem um significado, e nunca aparece sozinha.</strong> Verde com ✓ quer dizer aprovada; amarelo, que alguém precisa agir; tracejado, que a vez é do outro lado; cinza, que virou histórico.</li>
+    </ul>
+    <aside class="note"><b>O erro do amarelo</b>No primeiro rascunho, o bloco "v4 aguardando" usava o mesmo amarelo da etiqueta de preço da arte, e os dois disputavam o olhar. Deixei o amarelo forte só para o aviso do cliente e usei um amarelo claro no resto.</aside>
+
+    <figure class="figure wide"><img src="img/aprova/ui-painel.png" alt="Painel da agência: aviso 'Rafael aprovou o Post Black Friday (v3)', busca e tabela de peças ordenada por urgência" width="2400" height="1500" loading="lazy"><figcaption>O painel segue a urgência: primeiro o que precisa da agência, depois o que espera o cliente, por fim o que já foi aprovado.</figcaption></figure>
+    <figure class="figure wide"><img src="img/aprova/ui-detalhe.png" alt="Detalhe da peça: abas de versão, v4 aguardando Rafael, v3 aprovada que não vale para a v4 com links Ver comprovante e Baixar v3 aprovada, e linha do tempo" width="2400" height="1500" loading="lazy"><figcaption>O detalhe mostra o que vale: a v4 pendente, a v3 aprovada e o arquivo certo para publicar.</figcaption></figure>
+    <figure class="figure wide"><img src="img/aprova/cores-principios.png" alt="Prancha de cores e princípios: paleta 60-30-10, significado de cada estado e nove princípios aplicados" width="2400" height="1896" loading="lazy"><figcaption>Cores, significados e os princípios por trás de cada decisão.</figcaption></figure>
+
+    <!-- ===================== -->
+    <h2>Como usei IA no processo</h2>
+    <p>Fiz este projeto com o Claude, a IA da Anthropic, como parceiro de trabalho. Eu escolhi o problema, conduzi a pesquisa e decidi o que entrava e o que saía do produto. A IA acelerou a execução:</p>
+    <ul>
+      <li><strong>Organização da pesquisa:</strong> sínteses das conversas e do teste, que eu revisei.</li>
+      <li><strong>Protótipo e telas finais:</strong> telas e conexões no Figma montadas a partir das minhas decisões, com a minha revisão tela por tela.</li>
+      <li><strong>Pesquisa secundária:</strong> busca de fontes públicas. Abri cada página para conferir os números.</li>
+      <li><strong>Avaliação heurística:</strong> o rascunho veio da IA; as notas de gravidade foram revisadas e decididas por mim. Quando pedi uma segunda opinião, uma delas subiu de pequena para grave.</li>
+    </ul>
+    <aside class="note"><b>Por que contar isso</b>Usar IA bem não é pedir uma resposta pronta. É saber o que perguntar, conferir o que volta e decidir o que fica.</aside>
+
+    <!-- ===================== -->
+    <h2>Próximos passos</h2>
+    <ul>
+      <li><strong>Reteste com 2 ou 3 pessoas novas</strong>, só nas duas tarefas que falharam. Meta: nota 5 ou mais.</li>
+      <li><strong>Várias aprovações ao mesmo tempo.</strong> Hoje o aviso do painel mostra uma peça só. A próxima versão agrupa: "3 peças aprovadas hoje".</li>
+      <li><strong>O que eu mediria depois do lançamento:</strong> rodadas de ajuste por peça (a métrica principal, já que o mercado está em 5), quantas aprovações acontecem pelo link e quantos dias se passam entre o envio e a aprovação.</li>
+    </ul>
+
+    <!-- ===================== -->
+    <h2>O que aprendi</h2>
+    <p><strong>Uma informação na tela não é o mesmo que uma informação entendida.</strong> O aviso estava lá. Faltava destaque, e faltava dizer o que ele significava.</p>
+    <p><strong>Estados que ninguém desenha são onde o produto quebra.</strong> O painel dizendo "Aprovada" para uma versão não aprovada nasceu de uma tela que eu não tinha previsto.</p>
+    <p><strong>Quando não dá para fazer o método ideal, troque de método e diga isso.</strong> É melhor do que pular a validação ou fingir que ela aconteceu.</p>
+
+    <p class="source">Fontes: <a href="https://ami.org.au/knowledge-hub/almost-a-guarantee-for-setting-money-on-fire-1000-marketers-agencies-and-betterbriefs-on-broken-creative-ideation-evaluation-its-crippling-impact-on-effectiveness-and-h/">BetterIdeas Project, 2025 (via AMI)</a> e <a href="https://wfanet.org/knowledge/item/2025/04/18/what-s-holding-back-brilliant-ideas">WFA</a>; <a href="https://canaltech.com.br/apps/o-que-os-brasileiros-mais-fazem-no-whatsapp-segundo-pesquisa/">pesquisa Opinion Box sobre WhatsApp, 2025 (via Canaltech)</a>; documentação de ajuda do <a href="https://help.filestage.io/fr/articles/9112521-how-to-share-content-with-reviewers-and-control-their-permissions">Filestage</a> e do <a href="https://help.frame.io/en/articles/1161479-review-links-explained-for-clients-legacy">Frame.io</a>; <a href="https://forum.frame.io/t/commenting-for-external-clients-via-review-links-appears-broken-even-on-pro-plan/2645">fórum do Frame.io</a>. Consultadas em 25/10/2026.</p>
+
+  </article>
+
+  <nav class="next-case" aria-label="Próximo case">
+    <p>Próximo case</p>
+    <a href="pet.html">Hotel para Pet</a>
+  </nav>
+</main>
+
+<footer class="site-foot" id="contato">
+  <div class="foot-inner">
+  <p class="ask">Quer conversar sobre produto? Me chama.</p>
+  <div class="links">
+    <a class="mail" href="mailto:isabelaabdenor@gmail.com">isabelaabdenor@gmail.com</a>
+    <a href="https://www.linkedin.com/in/isabelaabdenor/">LinkedIn</a>
+    <a href="https://www.behance.net/isabelaabdenor">Behance</a>
+    <a href="curriculo-isabela-abdenor.pdf">Currículo (PDF)</a>
+  </div>
+  </div>
+</footer>
+
+
+<script>
+  // antes e depois: a barra (input range) move o recorte da versão nova
+  document.querySelectorAll('.compare-frame').forEach(frame => {
+    const range = frame.querySelector('input');
+    const set = () => frame.style.setProperty('--pos', range.value + '%');
+    range.addEventListener('input', set);
+    set();
+  });
+</script>
+</body>
+</html>

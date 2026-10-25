@@ -450,6 +450,11 @@ td.no { color: var(--ink-soft); font-family: var(--display); }
 .screens .cap b { color: var(--ink); display: block; }
 
 
+/* duas imagens de tela lado a lado (antes e depois no desktop) */
+.pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(14px, 2vw, 28px); margin: 1rem 0 2rem; }
+.pair .figure { margin: 0; }
+.pair img, .doc > .figure.wide img { box-shadow: 0 10px 30px rgba(29, 43, 38, .1); }
+
 /* antes e depois arrastável */
 .compare {
   display: grid;
@@ -538,6 +543,7 @@ td.no { color: var(--ink-soft); font-family: var(--display); }
   .note::before { display: none; }
   .screens { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .split { grid-template-columns: minmax(0, 1fr); }
+  .pair { grid-template-columns: minmax(0, 1fr); }
   .split img { max-width: 260px; }
   .compare { grid-template-columns: minmax(0, 1fr); justify-items: center; }
   .compare-frame { width: min(100%, 300px); }
