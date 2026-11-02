@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>g1: news reading on mobile — Isabela Abdenor</title>
+<meta name="description" content="Independent study: I measured 13 articles, analyzed 819 reader reviews and redesigned news reading on mobile for g1, one of Brazil's largest news sites.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="g1: news reading on mobile — Isabela Abdenor">
+<meta property="og:description" content="Independent study: measurement, 819 reader reviews and a redesign of news reading on mobile.">
+<meta property="og:image" content="https://isabelaabdenor-ctrl.github.io/img/g1/antes-depois.png">
+<meta property="og:url" content="https://isabelaabdenor-ctrl.github.io/en/g1.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" hreflang="pt-BR" href="https://isabelaabdenor-ctrl.github.io/g1.html">
+<link rel="alternate" hreflang="en" href="https://isabelaabdenor-ctrl.github.io/en/g1.html">
+<link rel="alternate" hreflang="x-default" href="https://isabelaabdenor-ctrl.github.io/g1.html">
+<meta name="theme-color" content="#0b0b0e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../case.css?v=2">
+</head>
+<body style="--accent: #ff6b4a">
+
+<header class="bar">
+  <div class="wrap">
+    <a class="me" href="index.html">Isabela Abdenor</a>
+    <nav aria-label="Main">
+      <a href="index.html#cases">Work</a>
+      <a href="index.html#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="right">
+      <span class="pill open">Open to opportunities</span>
+      <span class="lang" aria-label="Language"><a href="../g1.html" lang="pt-BR" hreflang="pt-BR">PT</a><a aria-current="true" href="g1.html" lang="en">EN</a></span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="glow" aria-hidden="true"></div>
+
+  <section class="case-top wrap">
+    <a class="back" href="index.html#cases">← All case studies</a>
+    <div class="tags"><span class="seal">Independent study</span><span class="yr">October 2026</span></div>
+    <h1>Redesigning news reading on mobile for g1</h1>
+    <p class="lead">g1 is one of Brazil's largest news sites, and reading an article there on a phone is more tiring than it should be. I measured the pages, read what readers complain about and redesigned the article screen. The research showed I was wrong about the cause, and that is what led to the solution.</p>
+
+    <div class="numbers">
+      <div><b>13</b><span>articles measured across 3 news sites</span></div>
+      <div><b>819</b><span>reader reviews analyzed</span></div>
+      <div><b>1.4 → 0</b><span>screens of scrolling before the text starts: today → proposal</span></div>
+      <div><b>10</b><span>design decisions</span></div>
+    </div>
+
+    <dl class="facts">
+      <div><dt>My role</dt><dd>I did everything on my own: research, analysis and design</dd></div>
+      <div><dt>When</dt><dd>October 2026</dd></div>
+      <div><dt>Type</dt><dd>Self-initiated study, not affiliated with Globo (g1's owner)</dd></div>
+      <div><dt>Tools</dt><dd>Figma, Claude</dd></div>
+    </dl>
+
+    <figure class="cover">
+      <img src="../img/g1/antes-depois.png" alt="Before and after: on g1 today, the text starts on average after 1.4 screens and a card covers the top; in the proposal, the text starts on the first screen and nothing covers the content" width="2400" height="1520">
+    </figure>
+  </section>
+
+  <div class="layout wrap">
+    <nav class="toc" aria-label="Case study sections">
+      <p class="mono">In this case study</p>
+      <ol>
+        <li><a href="#resumo">Summary</a></li>
+        <li><a href="#contexto">Why g1</a></li>
+        <li><a href="#medicao">1. Measuring the pages</a></li>
+        <li><a href="#leitores">2. Reading the readers</a></li>
+        <li><a href="#desafio">The challenge</a></li>
+        <li><a href="#redesenho">The redesign</a></li>
+        <li><a href="#validacao">Next steps</a></li>
+        <li><a href="#aprendi">What I learned</a></li>
+      </ol>
+    </nav>
+
+    <article class="doc">
+
+      <section id="resumo">
+        <p class="mono num">30-second summary</p>
+        <dl class="summary wide">
+          <div><dt>The problem</dt><dd>Reading a g1 article on a phone is tiring, and readers who give up halfway don't come back.</dd></div>
+          <div><dt>What I found</dt><dd>g1 doesn't have too many ads. What bothers people is ads interrupting their reading, and the text taking too long to start.</dd></div>
+          <div><dt>What I proposed</dt><dd>A screen that starts with the text, rules so ads don't get in the way, and a list that remembers where the reader stopped.</dd></div>
+        </dl>
+      </section>
+
+      <section id="contexto">
+        <p class="mono num">Context</p>
+        <h2>Why g1</h2>
+        <p>Today, 82% of Brazilians get their news on their phones, up from 23% in 2013. On Google Play alone, the g1 app has more than 50,000 reviews, so any small reading problem repeats many times a day.</p>
+        <p>To stay focused, I chose a single task to study: <strong>opening an article and reading it to the end</strong>.</p>
+        <div class="callout"><b>Why this is an independent study</b>I don't work at Globo and had no access to internal data. I only used what is public: the website itself, app store reviews and market research.</div>
+
+        <h3>The research path, in 4 steps</h3>
+        <ol class="flow wide">
+          <li><b>What I assumed</b>"g1 has too many ads."</li>
+          <li><b>I measured the pages</b>The ads are within the limit. <span class="x">I was wrong.</span></li>
+          <li><b>I read the readers</b>They don't complain about the amount, but about ads that interrupt.</li>
+          <li class="key"><b>The finding</b>The problem is ads disrupting reading, and the text taking too long to start.</li>
+        </ol>
+      </section>
+
+      <section id="medicao">
+        <p class="mono num">Step 1</p>
+        <h2>I measured before giving an opinion</h2>
+        <p>I thought the problem was obvious: "g1 has too many ads". Before designing anything, I decided to measure whether that was true.</p>
+        <p>I opened 13 articles at iPhone screen size, on three Brazilian news sites, and measured:</p>
+        <ul>
+          <li><strong>how much of the page is ads.</strong> The accepted industry limit is 30%;</li>
+          <li><strong>how far you scroll before the text starts.</strong> I measured in "screens": 1 screen is the height of the phone. So 1.4 screens means scrolling almost a screen and a half before seeing the first paragraph;</li>
+          <li><strong>how many ads appear in the middle of the text.</strong></li>
+        </ul>
+
+        <div class="charts-2 wide">
+          <figure class="chart">
+            <h4>How much of the page is ads</h4>
+            <p class="how">Average of the articles measured on each site.</p>
+            <ul class="bars">
+              <li><span class="lab"><b>g1</b></span><span class="track"><span class="fill hl" style="--v:40%"></span><span class="limit" style="--l:75%"></span><span class="val" style="--v:40%">16%</span></span></li>
+              <li><span class="lab">UOL</span><span class="track"><span class="fill" style="--v:40%"></span><span class="limit" style="--l:75%"></span><span class="val" style="--v:40%">16%</span></span></li>
+              <li><span class="lab">CNN Brasil</span><span class="track"><span class="fill" style="--v:17.5%"></span><span class="limit" style="--l:75%"></span><span class="val" style="--v:17.5%">7%</span></span></li>
+            </ul>
+            <p class="legend-line"><span><i class="lim"></i>industry limit: 30%</span></p>
+          </figure>
+          <figure class="chart">
+            <h4>How far you scroll before the text</h4>
+            <p class="how">In phone screens. The lower, the sooner reading starts.</p>
+            <ul class="bars">
+              <li><span class="lab"><b>g1</b></span><span class="track"><span class="fill hl" style="--v:56%"></span><span class="val" style="--v:56%">1.4 screens</span></span></li>
+              <li><span class="lab">UOL</span><span class="track"><span class="fill" style="--v:44%"></span><span class="val" style="--v:44%">1.1 screens</span></span></li>
+              <li><span class="lab">CNN Brasil</span><span class="track"><span class="fill" style="--v:44%"></span><span class="val" style="--v:44%">1.1 screens</span></span></li>
+            </ul>
+          </figure>
+        </div>
+
+        <details class="details wide">
+          <summary>See the full measurement table</summary>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th scope="col">Site</th><th scope="col">Articles</th><th scope="col">Screens to 1st paragraph</th><th scope="col">Ads within the text</th><th scope="col">Page taken by ads</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">g1</th><td>5</td><td class="hl"><strong>1.4</strong> (1.1 to 2.0)</td><td>4.8</td><td>16%</td></tr>
+              <tr><th scope="row">UOL</th><td>3</td><td>1.1</td><td>4.7</td><td>16%</td></tr>
+              <tr><th scope="row">CNN Brasil</th><td>5</td><td>1.1</td><td>1.8</td><td>7%</td></tr>
+            </tbody>
+          </table>
+        </div>
+        </details>
+        <p class="source">Measured on 10/24/2026, logged out, in the international news section. Folha was left out because its articles were locked for non-subscribers.</p>
+
+        <p><strong>I was wrong.</strong> Ads take up 16% of the g1 page: well under the 30% limit and the same as UOL. What sets g1 apart is the top of the page. Of the three sites, it's where you scroll the most before the text appears.</p>
+        <div class="callout"><b>Same story, two sites</b>g1 and UOL published the same story, about a fire in Germany. On g1, the first paragraph was 1.6 screens from the top. On UOL, 1.2.</div>
+
+        <h3>What stands between the reader and the text</h3>
+        <div class="split wide">
+          <img src="../img/g1/antes-g1.png" alt="Screenshot of a g1 article on a phone: a 'Suggested for you' card over the top, headline, summary, buttons and an ad before the text" width="750" height="1624" loading="lazy">
+          <ol>
+            <li><strong>A card covers the top.</strong> When the article opens, "Suggested for you" sits over the header. In the 5 articles I opened, it suggested the same unrelated story.</li>
+            <li><strong>Two menu bars.</strong> Globo's product bar sits above the g1 bar.</li>
+            <li><strong>Photo and ad before the text.</strong> After the summary come buttons, a full-screen photo and an ad.</li>
+            <li><strong>A cookie notice with no choice.</strong> It takes about 19% of the screen, only has a "Continue" button and appears as soon as the reader starts scrolling.</li>
+          </ol>
+        </div>
+        <p>For this review I used Nielsen's 10 heuristics, a classic list of usability best practices. I also noted what works well: the summary under the headline explains the story on the first screen, and the prominent WhatsApp share button matches how Brazilians share news.</p>
+      </section>
+
+      <section id="leitores">
+        <p class="mono num">Step 2</p>
+        <h2>I read what readers complain about</h2>
+        <p>Measuring shows what happens on screen, but not what bothers people. I had no way to run interviews, so I went to readers who had already spoken up: the public reviews of the g1 app.</p>
+        <p>I collected the reviews with text from the last 12 months, on Google Play and the App Store, and filtered down to what design can solve:</p>
+
+        <ol class="funnel wide">
+          <li><b>819</b><span>reviews with text</span></li>
+          <li><b>192</b><span>negative ones (1 or 2 stars), which I read one by one and sorted by topic</span></li>
+          <li class="key"><b>43</b><span>mentions of reading problems design can solve</span></li>
+        </ol>
+
+        <figure class="chart wide">
+          <h4>What readers complain about</h4>
+          <p class="how">The 192 negative reviews, by topic. In color, what design can solve. A review can mention more than one topic.</p>
+          <ul class="bars">
+            <li><span class="lab">App crashes or freezes</span><span class="track"><span class="fill" style="--v:75%"></span><span class="val" style="--v:75%">53</span></span></li>
+            <li><span class="lab">No clear topic</span><span class="track"><span class="fill" style="--v:72%"></span><span class="val" style="--v:72%">51</span></span></li>
+            <li><span class="lab">Editorial line</span><span class="track"><span class="fill" style="--v:51%"></span><span class="val" style="--v:51%">36</span></span></li>
+            <li><span class="lab"><b>Ads interrupt</b></span><span class="track"><span class="fill hl" style="--v:35%"></span><span class="val" style="--v:35%">25</span></span></li>
+            <li><span class="lab">Games</span><span class="track"><span class="fill" style="--v:21%"></span><span class="val" style="--v:21%">15</span></span></li>
+            <li><span class="lab"><b>Loses their place</b></span><span class="track"><span class="fill hl" style="--v:15.5%"></span><span class="val" style="--v:15.5%">11</span></span></li>
+            <li><span class="lab"><b>Font size, contrast</b></span><span class="track"><span class="fill hl" style="--v:10%"></span><span class="val" style="--v:10%">7</span></span></li>
+            <li><span class="lab">Notifications</span><span class="track"><span class="fill" style="--v:7%"></span><span class="val" style="--v:7%">5</span></span></li>
+          </ul>
+          <p class="legend-line"><span><i class="hl"></i>design can solve it</span><span><i></i>technical, journalism, out of scope or no clear topic</span></p>
+        </figure>
+
+        <details class="details wide">
+          <summary>See the full reviews table</summary>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th scope="col">What they complain about</th><th scope="col">Negative reviews</th><th scope="col">Can design solve it?</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">App crashes, freezes or won't open</th><td>53 (28%)</td><td class="no">No, it's a technical issue</td></tr>
+              <tr><th scope="row">Editorial line and politics</th><td>36 (19%)</td><td class="no">No, it's about journalism</td></tr>
+              <tr><th scope="row">Ads that interrupt reading</th><td>25 (13%)</td><td class="yes">Yes</td></tr>
+              <tr><th scope="row">Games (Soletra, Combinado)</th><td>15 (8%)</td><td class="no">Out of this study's scope</td></tr>
+              <tr><th scope="row">Goes back to the top and loses their place</th><td>11 (6%)</td><td class="yes">Yes</td></tr>
+              <tr><th scope="row">Font size and contrast</th><td>7 (4%)</td><td class="yes">Yes</td></tr>
+              <tr><th scope="row">Notifications</th><td>5 (3%)</td><td class="no">Out of this study's scope</td></tr>
+              <tr><th scope="row">No clear topic (e.g. "didn't like it")</th><td>51 (27%)</td><td class="no">Can't tell</td></tr>
+            </tbody>
+          </table>
+        </div>
+        </details>
+
+        <p>The three topics design can solve share the same cause: <strong>people can't read to the end</strong>.</p>
+        <div class="callout"><b>Separating what's mine to solve</b>The app's biggest problem is crashing, and that isn't fixed with a screen. I'd rather say so than pretend the redesign solves everything.</div>
+
+        <h3>What connected the two steps</h3>
+        <p>If g1 doesn't have too many ads, why do so many people complain about ads? The reviews answered: <strong>the problem isn't how many ads there are, but what they do</strong>. Readers describe ads that:</p>
+        <ul>
+          <li>open on their own while the reader is just scrolling;</li>
+          <li>sit on top of the text;</li>
+          <li>redirect to betting sites;</li>
+          <li>stop the music that was playing.</li>
+        </ul>
+        <blockquote class="quote">"I have to scroll through all the stories I've already seen to keep reading… then I give up."<cite>A reader's review about losing their place in the list (translated from Portuguese)</cite></blockquote>
+
+        <div class="insight wide">
+          <p class="mono">The finding</p>
+          <p>Readers accept ads that stay in their place. What they don't accept is being interrupted.</p>
+        </div>
+      </section>
+
+      <section id="desafio">
+        <p class="mono num">The challenge</p>
+        <h2>How might we help people read to the end, without removing the ads that pay for the journalism?</h2>
+        <p>That constraint changes everything. A proposal that simply removes ads is easy to design, but it would never be approved by the people who depend on them.</p>
+        <div class="callout"><b>References</b>I looked at news apps known for a good reading experience, like Apple News and The New York Times app. In both, adjusting the font size is one tap away, inside the article.</div>
+      </section>
+
+      <section id="redesenho">
+        <p class="mono num">Solution</p>
+        <h2>The redesign</h2>
+        <p>First, the direct comparison. Drag the slider to see the same screen before and after.</p>
+
+        <div class="compare wide">
+          <div class="compare-frame" style="--pos: 50%">
+            <img src="../img/g1/antes-g1.png" alt="Today: 'Suggested for you' card over the top, headline, buttons and an ad before the text" width="750" height="1624">
+            <div class="c-depois"><img src="../img/g1/depois-tela.png" alt="Proposal: one menu bar, headline, summary and the first paragraph already visible" width="750" height="1624"></div>
+            <div class="c-handle" aria-hidden="true"><span></span></div>
+            <span class="c-lab l" aria-hidden="true">Today</span>
+            <span class="c-lab r" aria-hidden="true">Proposal</span>
+            <input type="range" min="0" max="100" value="50" aria-label="Compare today's screen with the proposal">
+          </div>
+          <ul class="compare-notes">
+            <li><b>Today</b>The text starts after 1.4 screens of scrolling, on average. Before it come a card over the top, two menu bars, buttons, a photo and an ad.</li>
+            <li><b>Proposal</b>Headline, summary and first paragraph fit on the first screen. Nothing covers the content.</li>
+          </ul>
+        </div>
+
+        <p>Then the full flow in four screens. I used made-up stories so as not to create false facts about real news. The yellow numbers on the screens point to the decisions explained below. The screens are in Portuguese, like the original site.</p>
+
+        <ul class="screens wide">
+          <li><img src="../img/g1/tela-a.png" alt="Screen A: article with a single menu bar, progress line, headline, summary, Aa button and the first paragraph already visible" width="375" height="812" loading="lazy"><p class="cap"><b>A. Opening</b>The text is already there, no scrolling.</p></li>
+          <li><img src="../img/g1/tela-b.png" alt="Screen B: article scrolling, with a photo after the first paragraphs and a fixed ad slot labeled Advertising" width="375" height="812" loading="lazy"><p class="cap"><b>B. Reading</b>The ad stays in its own slot.</p></li>
+          <li><img src="../img/g1/tela-c.png" alt="Screen C: Reading settings panel with text size in five steps and light, dark or system theme" width="375" height="812" loading="lazy"><p class="cap"><b>C. Settings</b>Font and theme one tap away.</p></li>
+          <li><img src="../img/g1/tela-d.png" alt="Screen D: article list with Read and You stopped here labels, and a You're back where you stopped notice with a Go to top button" width="375" height="812" loading="lazy"><p class="cap"><b>D. Back to the list</b>Right where the reader stopped.</p></li>
+        </ul>
+
+        <h3>The 10 decisions</h3>
+        <ol class="decisions wide">
+          <li><b>The text starts on the first screen</b>Headline, summary and first paragraph appear without scrolling.</li>
+          <li><b>A single menu bar</b>Globo's products move into the menu, freeing almost 50 px for the text.</li>
+          <li><b>Progress line</b>It shows how much is left and helps the reader decide to keep going.</li>
+          <li><b>Nothing over the top</b>Suggestions for other stories move to the end of the text.</li>
+          <li><b>Ads in their own slot</b>With reserved height and an "Advertising" label. They don't cover the text or push it when they load.</li>
+          <li><b>The photo comes later</b>It appears after the first paragraphs, once reading has started.</li>
+          <li><b>Font size at hand</b>The "Aa" button sits next to the author's name, as readers asked.</li>
+          <li><b>The reader picks the theme</b>Light, dark or same as the phone.</li>
+          <li><b>Back to the same spot</b>When leaving an article, the list opens where the reader was.</li>
+          <li><b>What was read stays marked</b>The "Read" label and the "Go to top" button show readers where they are.</li>
+        </ol>
+
+        <div class="rules wide">
+          <h3>Rules so ads don't get in the way</h3>
+          <ul>
+            <li>Never on top of the text.</li>
+            <li>Space is reserved before loading, so the text doesn't jump.</li>
+            <li>Nothing opens or changes page without a tap.</li>
+            <li>Video starts muted and doesn't stop the phone's music.</li>
+            <li>The number of ads stays the same as today. The behavior changes, not the revenue.</li>
+          </ul>
+        </div>
+
+        <p class="source">I used Claude as an assistant to automate the site measurements.</p>
+      </section>
+
+      <section id="validacao">
+        <p class="mono num">Next steps</p>
+        <h2>How I would test it</h2>
+        <p>The next step is to test the prototype with five people who read news on their phones every week. Each would read the same article in today's version and in the new one, and I would compare:</p>
+        <ul>
+          <li><strong>How far they read:</strong> how many reach the last paragraph in each version.</li>
+          <li><strong>How long it takes to start:</strong> the seconds until the first paragraph appears.</li>
+          <li><strong>Whether ads got in the way:</strong> whether the person remembers an ad disrupting their reading.</li>
+        </ul>
+        <h3>Limits of this study</h3>
+        <ul>
+          <li><strong>The measurement covers a single day.</strong> Ads change with every visit.</li>
+          <li><strong>People who review apps tend to be very happy or very annoyed.</strong> The reviews don't represent the average reader.</li>
+          <li><strong>The app and the website are different products.</strong> The reviews are about the app, and the measurement was of the mobile website. The reading problems show up in both, but they aren't identical.</li>
+        </ul>
+      </section>
+
+      <section id="aprendi">
+        <p class="mono num">Takeaways</p>
+        <h2>What I learned</h2>
+        <p>Measuring overturned an idea I was sure was right. Had I gone straight to design, I would have proposed "fewer ads": the most obvious solution, and the least viable.</p>
+        <p>Combining numbers with what people say showed something neither would show alone. The measurement showed the number of ads wasn't the problem. The reviews showed the problem was the way they appear.</p>
+        <p class="source">Sources (in Portuguese and English): <a href="https://www.poder360.com.br/poder-midia/so-10-dos-brasileiros-leem-jornal-impresso-diz-estudo/">Digital News Report 2025, Reuters Institute (via Poder360)</a>; <a href="https://support.google.com/webtools/answer/7073774">ad density standard from the Coalition for Better Ads (via Google)</a>; public reviews of the g1 app on Google Play and the App Store, from 10/24/2025 to 10/23/2026; total Google Play review count checked on 11/02/2026.</p>
+      </section>
+
+    </article>
+  </div>
+
+  <div class="wrap">
+    <a class="next" href="aprova.html">
+      <span><span class="mono">Next case study</span><b>An app for agencies and clients to approve creative work</b></span>
+      <span class="arrow" aria-hidden="true">→</span>
+    </a>
+
+    <section class="contact" id="contact">
+      <h2>Let's talk.</h2>
+      <p>I'm open to UX/UI and Product Design roles, including remote ones. Send me a message.</p>
+      <div class="links">
+        <a class="btn" href="mailto:isabelaabdenor@gmail.com">isabelaabdenor@gmail.com</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/isabelaabdenor/">LinkedIn</a>
+        <a class="btn ghost" href="../curriculo-isabela-abdenor.pdf">Résumé (PDF, in Portuguese)</a>
+      </div>
+    </section>
+    <footer class="foot"><span>© 2026 Isabela Abdenor</span><span>Vitória, Brazil</span></footer>
+  </div>
+</main>
+
+<script src="../case.js?v=2"></script>
+</body>
+</html>

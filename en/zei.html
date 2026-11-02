@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zei: reviewing a grocery list app — Isabela Abdenor</title>
+<meta name="description" content="Course project, reviewed: public data, competitor analysis and a screen review of a grocery list app, with a proposal to cut the scope from 13 features to 3.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Zei: reviewing a grocery list app — Isabela Abdenor">
+<meta property="og:description" content="Public data, competitors and a screen review to rethink a grocery list app.">
+<meta property="og:image" content="https://isabelaabdenor-ctrl.github.io/img/zei/capa.webp">
+<meta property="og:url" content="https://isabelaabdenor-ctrl.github.io/en/zei.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" hreflang="pt-BR" href="https://isabelaabdenor-ctrl.github.io/zei.html">
+<link rel="alternate" hreflang="en" href="https://isabelaabdenor-ctrl.github.io/en/zei.html">
+<link rel="alternate" hreflang="x-default" href="https://isabelaabdenor-ctrl.github.io/zei.html">
+<meta name="theme-color" content="#0b0b0e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../case.css?v=2">
+</head>
+<body style="--accent: #4f8dff">
+
+<header class="bar">
+  <div class="wrap">
+    <a class="me" href="index.html">Isabela Abdenor</a>
+    <nav aria-label="Main">
+      <a href="index.html#cases">Work</a>
+      <a href="index.html#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="right">
+      <span class="pill open">Open to opportunities</span>
+      <span class="lang" aria-label="Language"><a href="../zei.html" lang="pt-BR" hreflang="pt-BR">PT</a><a aria-current="true" href="zei.html" lang="en">EN</a></span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="glow" aria-hidden="true"></div>
+
+  <section class="case-top wrap">
+    <a class="back" href="index.html#cases">← All case studies</a>
+    <div class="tags"><span class="seal curso">Course project</span><span class="yr">Created in 2024 · reviewed in 2026</span></div>
+    <h1>Reviewing a grocery list app</h1>
+    <p class="lead">Zei was created in 2024 by Robert Rodrigues, in a course project where I helped with the research. In 2026, I went back to it on my own: I replaced unsourced numbers with public data, looked at competitors and reviewed the screens. The review showed the app promised too much.</p>
+
+    <div class="numbers">
+      <div><b>4</b><span>public data points replacing unsourced numbers</span></div>
+      <div><b>3</b><span>competing apps analyzed</span></div>
+      <div><b>4</b><span>issues found in my own review of the screens</span></div>
+      <div><b>13 → 3</b><span>features: the proposed cut</span></div>
+    </div>
+
+    <dl class="facts">
+      <div><dt>My role</dt><dd>2024: research support. 2026: the whole review, on my own</dd></div>
+      <div><dt>When</dt><dd>Created in 2024 · reviewed in October 2026</dd></div>
+      <div><dt>Original team</dt><dd>Created by Robert Rodrigues, with my participation</dd></div>
+      <div><dt>Platform</dt><dd>Mobile app</dd></div>
+    </dl>
+
+    <figure class="cover">
+      <img src="../img/zei/capa.webp" alt="Board with the Zei brand, app screens and point-of-sale applications" width="1400" height="788">
+    </figure>
+  </section>
+
+  <div class="layout wrap">
+    <nav class="toc" aria-label="Case study sections">
+      <p class="mono">In this case study</p>
+      <ol>
+        <li><a href="#resumo">Summary</a></li>
+        <li><a href="#contexto">The problem</a></li>
+        <li><a href="#dados">1. Public data</a></li>
+        <li><a href="#concorrentes">2. Competitors</a></li>
+        <li><a href="#solucao">The 2024 version</a></li>
+        <li><a href="#avaliacao">3. Screen review</a></li>
+        <li><a href="#validacao">How I'd test it</a></li>
+        <li><a href="#aprendi">What I learned</a></li>
+      </ol>
+    </nav>
+
+    <article class="doc">
+
+      <section id="resumo">
+        <p class="mono num">30-second summary</p>
+        <dl class="summary wide">
+          <div><dt>The problem</dt><dd>People who go grocery shopping with a list still spend more than planned and sometimes can't find what they came for.</dd></div>
+          <div><dt>What I found</dt><dd>The problem isn't the lack of a list, but what happens to it in the aisle. And an app with real product prices already exists.</dd></div>
+          <div><dt>What I proposed</dt><dd>Cut from 13 features to 3: a shared list, the running total against the budget, and prices at the chosen store.</dd></div>
+        </dl>
+      </section>
+
+      <section id="contexto">
+        <p class="mono num">Context</p>
+        <h2>The problem</h2>
+        <p>Zei was born from a familiar scene: someone writes a list at home, gets to the store, the product isn't on the shelf, they grab a pricier one, take whatever is on sale and find out at the checkout that they went over budget.</p>
+        <p>The 2024 version treated this as three separate problems: lack of information, a blown budget and out-of-stock products. Looking back, I saw all three share one cause: <strong>the purchase decision slips away from the list once the person is in the aisle</strong>.</p>
+        <div class="callout"><b>Why I removed the old numbers</b>The 2024 version said "10x more spending" and "20% of the time". They were assumptions, with no research behind them. Today I'd rather use a smaller number with a source than a big one I can't defend.</div>
+
+        <h3>The review path, in 4 steps</h3>
+        <ol class="flow wide">
+          <li><b>What the project claimed</b>"10x more spending", with no source.</li>
+          <li><b>Public data</b>Phone lists are followed less than paper ones. Going digital isn't enough.</li>
+          <li><b>Competitors</b>Real product prices are already public, from invoice data.</li>
+          <li class="key"><b>The proposal</b>Make the list carry weight at decision time, with real prices and the budget in sight. Only 3 features.</li>
+        </ol>
+      </section>
+
+      <section id="dados">
+        <p class="mono num">Step 1</p>
+        <h2>I replaced unsourced numbers with public data</h2>
+        <ul class="funnel plain wide">
+          <li><b>43%</b><span>of respondents' last five grocery purchases were impulse buys <span class="source">(SPC Brasil and CNDL, 2015)</span></span></li>
+          <li><b>57%</b><span>of impulse grocery purchases are triggered by a promotion <span class="source">(SBVC and Instituto Qualibest, 2021)</span></span></li>
+          <li><b>15.3%</b><span>of products were out of stock on Brazilian supermarket shelves in January 2024 <span class="source">(Neogrid Out-of-Stock Index)</span></span></li>
+        </ul>
+
+        <figure class="chart wide">
+          <h4>How much of the list people actually buy</h4>
+          <p class="how">Range of items bought, comparing a paper list and a phone list.</p>
+          <ul class="bars">
+            <li><span class="lab">Paper list</span><span class="track"><span class="fill" style="--v:70.4%"></span><span class="val" style="--v:70.4%">85% to 91%</span></span></li>
+            <li><span class="lab"><b>Phone list</b></span><span class="track"><span class="fill hl" style="--v:57.2%"></span><span class="val" style="--v:57.2%">67% to 76%</span></span></li>
+          </ul>
+          <p class="legend-line"><span>Each bar shows the middle of the range. Source: Drexel University, 2019.</span></p>
+        </figure>
+
+        <div class="insight wide">
+          <p class="mono">The finding</p>
+          <p>Moving the list to a phone isn't enough. It feels easy to change, so it becomes a suggestion, not a commitment.</p>
+        </div>
+        <p>A list app needs to make the list carry weight at decision time. The SBVC survey backs this up: most people say they plan their shopping. The problem isn't the lack of a list, but what happens to it inside the store.</p>
+        <div class="callout"><b>A caveat about the sources</b>The studies don't agree with each other: the same SBVC survey says only 8% of grocery purchases are impulse buys. And the 57% comes from a small group of 37 people. I use the numbers to show the pattern, not as an exact measure of the problem.</div>
+
+        <h3>Hypotheses to test</h3>
+        <p>Without user research, I treat the following as hypotheses, not conclusions:</p>
+        <ol>
+          <li>Seeing the running total go up against the budget makes people think twice before grabbing something off the list.</li>
+          <li>Knowing before leaving home whether a product is available, and at what price, prevents swapping it for a pricier one on the spot.</li>
+          <li>A list shared with the household prevents duplicate and forgotten items.</li>
+        </ol>
+      </section>
+
+      <section id="concorrentes">
+        <p class="mono num">Step 2</p>
+        <h2>I looked at who already solves part of this</h2>
+        <p>I compared Zei with three real apps: two grocery list apps and one price app built from invoice data.</p>
+        <div class="table-wrap wide">
+          <table>
+            <thead>
+              <tr><th scope="col">App</th><th scope="col">Shared list</th><th scope="col">Total and budget</th><th scope="col">Real local prices</th><th scope="col">What I learned from it</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Listonic</th><td class="yes">Yes</td><td class="yes">Price per item and total</td><td class="no">No, prices are typed in</td><td>Showing how much is left to spend helps people decide, but typing every price is too much work.</td></tr>
+              <tr><th scope="row">Bring!</th><td class="yes">Yes, in real time</td><td class="no">No</td><td class="no">No</td><td>The icon grid makes the list quick to build and easy to read in the aisle.</td></tr>
+              <tr><th scope="row">Menor Preço Brasil</th><td class="no">No</td><td class="no">No</td><td class="yes">Yes, from invoices</td><td>Price data already exists and is public. But the app searches product by product, not the whole list.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="source">Sources: <a href="https://listonic.com/compare-apps/listonic-vs-bring">Listonic and Bring!</a> (comparison published by Listonic itself), <a href="https://sefaz.es.gov.br/consumidor-capixaba-ja-pode-economizar-com-ap">Menor Preço in Espírito Santo (Sefaz-ES, in Portuguese)</a>, <a href="https://olhardigital.com.br/2025/08/03/dicas-e-tutoriais/quer-economizar-na-farmacia-e-supermercado-conheca-o-app-menor-preco-brasil/">how Menor Preço Brasil works (in Portuguese)</a>.</p>
+        <p>The open space is in the middle: <strong>nobody combines the household list with real prices at the nearest store and a visible budget</strong>.</p>
+        <div class="callout"><b>What changed the solution</b>In the original version, users themselves would update prices. Without users, there are no prices, and the app launches empty, with no reason for anyone to use it on day one. Menor Preço shows it's possible to start from invoice data, which is already public.</div>
+      </section>
+
+      <section id="solucao">
+        <p class="mono num">The original project</p>
+        <h2>The 2024 version</h2>
+        <p>The app had four areas: creating and managing lists, finishing a purchase, rating the experience, and profile. Then came wireframes of the main flow and, finally, the visual identity and final screens. The screens are in Portuguese.</p>
+        <figure class="figure wide">
+          <img src="../img/zei/arquitetura.webp" alt="Diagram of how the app was organized: landing page, sign in or create account, home and the list, rearrange, help and profile areas" loading="lazy" width="1400" height="788">
+          <figcaption>How the app was organized in the first version.</figcaption>
+        </figure>
+        <figure class="figure wide">
+          <img src="../img/zei/wireframes.gif" alt="Wireframes of the login, sign-up, list and checkout screens" loading="lazy" width="1400" height="787">
+          <figcaption>Wireframes of the flow from sign-up to a completed list.</figcaption>
+        </figure>
+        <figure class="figure wide">
+          <img src="../img/zei/telas.webp" alt="Final screens: product list with photos, completed list, product not found, experience rating and alert" loading="lazy" width="1400" height="788">
+          <figcaption>Final screens, including the product-not-found and completed-list states.</figcaption>
+        </figure>
+      </section>
+
+      <section id="avaliacao">
+        <p class="mono num">Step 3</p>
+        <h2>I reviewed the screens</h2>
+        <p>Without people to test with, I reviewed the 2024 version against Nielsen's 10 heuristics, a classic list of usability best practices. It was just me, so this finds interface issues but doesn't replace a test with people.</p>
+        <ol class="decisions wide">
+          <li><b>The app promises more than it delivers</b>The pitch lists 13 features, like a digital queue, a store map and a deals radar, but the app only covers lists and profile. <strong>Proposal:</strong> keep 3: a shared list, the total against the budget and prices at the chosen store.</li>
+          <li><b>It asks for an account before showing its value</b>The first step is "Sign in or create account". <strong>Proposal:</strong> let people create their first list without an account, and only ask for sign-up when they want to share it.</li>
+          <li><b>"Delete purchase" is hidden in the profile</b>An action that erases data sits next to "Change password", far from the purchase itself. <strong>Proposal:</strong> move it into the history, next to the purchase, with a confirmation and an undo option.</li>
+          <li><b>"Rearrange" doesn't say what it does</b>The label doesn't make clear whether it sorts the list, the aisles or something else. <strong>Proposal:</strong> replace it with "Sort by aisle", inside the list.</li>
+        </ol>
+        <div class="callout"><b>What I'd keep</b>When search can't find a product, the screen explains what happened and offers a way out: adding the item by hand. People are never left stuck.</div>
+        <div class="callout"><b>Why cut so much</b>The digital queue and the map are good ideas. But none of the hypotheses depend on them, and every extra screen is one more screen someone has to understand in the middle of an aisle.</div>
+      </section>
+
+      <section id="validacao">
+        <p class="mono num">Next steps</p>
+        <h2>How I'd test it</h2>
+        <p>The next step is to test a prototype with the three changes, with five people who shop for groceries every week.</p>
+        <ul>
+          <li><strong>Tasks:</strong> build a 10-item list for the week, set a budget and simulate a shopping trip at a store where two items are out of stock.</li>
+          <li><strong>What to watch:</strong> how long it takes to build the list, whether the person notices the budget while shopping and what they do when an item is out of stock.</li>
+          <li><strong>How to know it worked:</strong> the person finishes within budget and with the items on the list, or makes a conscious swap.</li>
+        </ul>
+      </section>
+
+      <section id="aprendi">
+        <p class="mono num">Takeaways</p>
+        <h2>What I learned</h2>
+        <p>The 2024 version bet on many features, a strong identity and big numbers. Going back to it taught me to start from the question <strong>"what needs to be true for this to work?"</strong> and cut whatever doesn't answer it.</p>
+        <p>I also learned to look for who has already solved part of the problem before designing. Menor Preço Brasil already existed and would have changed the solution from day one.</p>
+        <p class="source">Data sources (in Portuguese and English): <a href="https://oimparcial.com.br/brasil/2015/08/33-das-compras-feitas-por-impulso-sao-de-supermercado-aponta-pesquisa/">SPC Brasil and CNDL, 2015 (via O Imparcial)</a>; <a href="https://sbvc.com.br/bfd_download/estudo-jornada-de-compra-do-consumidor-omnichannel">SBVC and Instituto Qualibest, 2021</a>; <a href="https://newsblog.drexel.edu/2019/05/14/digital-shopping-lists-can-lead-to-impulse-buying/">Drexel University, 2019</a>; <a href="https://mercadoeconsumo.com.br/20/02/2024/noticias/supermercados-registram-ruptura-de-153-em-janeiro-segundo-pesquisa-da-neogrid/">Neogrid Out-of-Stock Index</a>.</p>
+      </section>
+
+    </article>
+  </div>
+
+  <div class="wrap">
+    <a class="next" href="g1.html">
+      <span><span class="mono">Next case study</span><b>Redesigning news reading on mobile for g1</b></span>
+      <span class="arrow" aria-hidden="true">→</span>
+    </a>
+
+    <section class="contact" id="contact">
+      <h2>Let's talk.</h2>
+      <p>I'm open to UX/UI and Product Design roles, including remote ones. Send me a message.</p>
+      <div class="links">
+        <a class="btn" href="mailto:isabelaabdenor@gmail.com">isabelaabdenor@gmail.com</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/isabelaabdenor/">LinkedIn</a>
+        <a class="btn ghost" href="../curriculo-isabela-abdenor.pdf">Résumé (PDF, in Portuguese)</a>
+      </div>
+    </section>
+    <footer class="foot"><span>© 2026 Isabela Abdenor</span><span>Vitória, Brazil</span></footer>
+  </div>
+</main>
+
+<script src="../case.js?v=2"></script>
+</body>
+</html>

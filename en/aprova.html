@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aprova: creative approval app — Isabela Abdenor</title>
+<meta name="description" content="Independent study: an app for agencies and clients to approve creative work, with interviews, a usability test with 5 people, a redesign and final UI.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Aprova: creative approval between agency and client — Isabela Abdenor">
+<meta property="og:description" content="Interviews, a usability test with 5 people and the redesign of a creative approval app.">
+<meta property="og:image" content="https://isabelaabdenor-ctrl.github.io/img/aprova/capa.png">
+<meta property="og:url" content="https://isabelaabdenor-ctrl.github.io/en/aprova.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" hreflang="pt-BR" href="https://isabelaabdenor-ctrl.github.io/aprova.html">
+<link rel="alternate" hreflang="en" href="https://isabelaabdenor-ctrl.github.io/en/aprova.html">
+<link rel="alternate" hreflang="x-default" href="https://isabelaabdenor-ctrl.github.io/aprova.html">
+<meta name="theme-color" content="#0b0b0e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../case.css?v=2">
+</head>
+<body style="--accent: #2dd4a7">
+
+<header class="bar">
+  <div class="wrap">
+    <a class="me" href="index.html">Isabela Abdenor</a>
+    <nav aria-label="Main">
+      <a href="index.html#cases">Work</a>
+      <a href="index.html#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="right">
+      <span class="pill open">Open to opportunities</span>
+      <span class="lang" aria-label="Language"><a href="../aprova.html" lang="pt-BR" hreflang="pt-BR">PT</a><a aria-current="true" href="aprova.html" lang="en">EN</a></span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="glow" aria-hidden="true"></div>
+
+  <section class="case-top wrap">
+    <a class="back" href="index.html#cases">← All case studies</a>
+    <div class="tags"><span class="seal">Independent study</span><span class="yr">Concept product · October 2026</span></div>
+    <h1>An app for agencies and clients to approve creative work</h1>
+    <p class="lead">In Brazil, ads and social posts are approved over WhatsApp and email, and nobody is sure which version counts. I designed an app to fix that, tested it with 5 people and found that telling people the piece changed isn't enough: you have to tell them what happens to their approval.</p>
+
+    <div class="numbers">
+      <div><b>5</b><span>people interviewed, from both sides</span></div>
+      <div><b>5</b><span>other people tested the prototype</span></div>
+      <div><b>4 of 5</b><span>didn't know whether the old approval still counted</span></div>
+      <div><b>10 → 1</b><span>issues found in my own review of the screens, from the 1st to the final version</span></div>
+    </div>
+
+    <dl class="facts">
+      <div><dt>My role</dt><dd>I did everything on my own: research, testing, design and final UI</dd></div>
+      <div><dt>When</dt><dd>October 2026</dd></div>
+      <div><dt>Type</dt><dd>Concept product: Aprova is not a real app</dd></div>
+      <div><dt>Platform</dt><dd>Phone for whoever approves, desktop for whoever sends</dd></div>
+    </dl>
+
+    <figure class="cover">
+      <img src="../img/aprova/capa.png" alt="Aprova on desktop with v4 awaiting approval and v3 approved, and on the phone the notice 'Your approval of v3 does not apply to v4'" width="2400" height="1500">
+    </figure>
+  </section>
+
+  <div class="layout wrap">
+    <nav class="toc" aria-label="Case study sections">
+      <p class="mono">In this case study</p>
+      <ol>
+        <li><a href="#resumo">Summary</a></li>
+        <li><a href="#contexto">Why this problem</a></li>
+        <li><a href="#entrevistas">1. Interviews</a></li>
+        <li><a href="#mercado">2. What already exists</a></li>
+        <li><a href="#desafio">The challenge</a></li>
+        <li><a href="#teste">3. Prototype and test</a></li>
+        <li><a href="#redesenho">The redesign</a></li>
+        <li><a href="#validacao">4. Validating without new people</a></li>
+        <li><a href="#visual">Final UI</a></li>
+        <li><a href="#aprendi">What I learned</a></li>
+      </ol>
+    </nav>
+
+    <article class="doc">
+
+      <section id="resumo">
+        <p class="mono num">30-second summary</p>
+        <dl class="summary wide">
+          <div><dt>The problem</dt><dd>Creative work is approved over WhatsApp and email, and nobody is sure which version counts or who approved it.</dd></div>
+          <div><dt>What I found</dt><dd>Saying the piece changed isn't enough. Even with the notice on screen, 4 of 5 people didn't know whether their old approval still counted.</dd></div>
+          <div><dt>What I proposed</dt><dd>Review by link with no account needed, comments pinned to the exact spot on the piece, an approval receipt and a clear rule: an approval only applies to the version approved.</dd></div>
+        </dl>
+      </section>
+
+      <section id="contexto">
+        <p class="mono num">Context</p>
+        <h2>Why this problem</h2>
+        <p>I know this problem first-hand from art direction: the piece goes out on WhatsApp, comes back with "change that color" and turns into "final_v3_FORREAL.png".</p>
+        <p>And it isn't just my impression. In a study of 1,034 marketing and agency professionals from several countries:</p>
+        <ul class="funnel plain wide">
+          <li><b>5 rounds</b><span>on average before an idea is approved, up from 3 in 2007</span></li>
+          <li><b>43%</b><span>of agencies say the right people are the ones approving</span></li>
+          <li><b>30%</b><span>of agencies get clear feedback from the client</span></li>
+        </ul>
+        <div class="callout"><b>The limit of these numbers</b>The study measures the approval of campaign ideas, not of each piece, and it isn't Brazil-only. I use the numbers to show the size of the problem, not as a target for the product.</div>
+        <p>In Brazil, this conversation happens on WhatsApp: 97% of users open the app every day, and 82% have already talked to businesses through it.</p>
+
+        <h3>The research path, in 4 steps</h3>
+        <ol class="flow wide">
+          <li><b>What I assumed</b>"Brazilian clients only approve over WhatsApp."</li>
+          <li><b>Interviews</b>The channel changes from client to client. <span class="x">I was only half right.</span></li>
+          <li><b>Prototype test</b>The change notice was on screen, and still 4 of 5 were unsure.</li>
+          <li class="key"><b>The finding</b>It's not enough to say the piece changed. You have to say what happens to the approval.</li>
+        </ol>
+      </section>
+
+      <section id="entrevistas">
+        <p class="mono num">Step 1</p>
+        <h2>I talked to people who send and people who approve</h2>
+        <p>I interviewed 5 people from both sides: an agency designer, a freelance designer, an account manager, a marketing manager and a communications coordinator. I asked each of them to walk me through, start to finish, the last piece they approved or sent for approval.</p>
+        <p>All 5 conversations showed the same four problems:</p>
+        <ol class="decisions wide">
+          <li><b>Feedback arrives scattered</b>WhatsApp, email, voice notes, calls, meetings. At the agency, someone becomes a translator: "My job is to gather everything and turn it into a request the creative team can understand."</li>
+          <li><b>Nobody knows which version counts</b>The "final" one is guessed from the file name or the last message. It has already been costly: a piece went out with the old price.</li>
+          <li><b>It's unclear who has the final say</b>Someone else changes what had already been approved: "We made two versions without knowing which direction to follow."</li>
+          <li><b>Tools get abandoned</b>When the client has to create an account to approve, they go back to messaging.</li>
+        </ol>
+        <div class="callout"><b>I was only half right</b>I thought the problem was Brazilian clients only approving over WhatsApp. But clients at large companies approved over email and Teams. The channel changes; what repeats is the lack of a reliable record of which version was approved, and by whom.</div>
+      </section>
+
+      <section id="mercado">
+        <p class="mono num">Step 2</p>
+        <h2>I looked at what already exists</h2>
+        <p>Before designing, I checked how two well-known approval tools, Filestage and Frame.io, handle this. I read the public help documentation of both.</p>
+        <div class="table-wrap wide">
+          <table>
+            <thead>
+              <tr><th scope="col">What I looked for</th><th scope="col">Filestage</th><th scope="col">Frame.io</th><th scope="col">Aprova</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Client reviews without creating an account</th><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+              <tr><th scope="row">Explains what happens to an approval when a new version is uploaded</th><td class="no">Not found in the docs</td><td class="no">Not found in the docs</td><td class="yes">Yes, it's the focus</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>In other words: approving without an account wouldn't be a differentiator, since both already do it. The open space was <strong>making clear what counts when the piece changes</strong>.</p>
+        <div class="callout"><b>Even the biggest stumble on the link</b>On Frame.io's official forum there are 2025 reports of clients who couldn't comment through the review link. The moment the client opens the link is the most fragile point of the whole process.</div>
+      </section>
+
+      <section id="desafio">
+        <p class="mono num">The challenge</p>
+        <h2>How might we know which version was approved, and by whom?</h2>
+        <p>And in a way that lets the client approve right on the piece, through a link, without creating an account. For the first version of the app, I picked what solved the four problems with the least effort for the client:</p>
+        <div class="cols wide">
+          <div>
+            <h4>In</h4>
+            <ul>
+              <li><strong>A review link with no login</strong>, to send on WhatsApp and open on a phone.</li>
+              <li><strong>Comments on the exact spot of the piece</strong>, saved on the version where they were made.</li>
+              <li><strong>One designated approver</strong>: others comment, only one approves.</li>
+              <li><strong>An approval badge</strong> showing who approved and when.</li>
+              <li><strong>A notice</strong> when the piece changes after being approved.</li>
+            </ul>
+          </div>
+          <div class="off">
+            <h4>Left for later</h4>
+            <ul>
+              <li>Review by department, like legal and sales.</li>
+              <li>Comparing two versions side by side.</li>
+              <li>Importing comments from WhatsApp.</li>
+            </ul>
+            <p>They matter, but they're expensive. First, the app needed to prove that clients actually use the link.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="teste">
+        <p class="mono num">Step 3</p>
+        <h2>Prototype and test with 5 people</h2>
+        <p>I built a clickable prototype in Figma with 22 screens, still in grayscale. That was on purpose: I wanted to test the flow before working on the visuals. The screens are in Portuguese.</p>
+
+        <ul class="screens wide">
+          <li><img src="../img/aprova/lofi-revisao.png" alt="Wireframe: the client opens the link and sees the piece with Request changes and Approve buttons" width="390" height="844" loading="lazy"><p class="cap"><b>Review</b>The client opens the link on a phone.</p></li>
+          <li><img src="../img/aprova/lofi-comentar.png" alt="Wireframe: a numbered pin on the price and the comment 'Change the price to R$ 89.90'" width="390" height="844" loading="lazy"><p class="cap"><b>Comment</b>The request is pinned to a spot on the piece.</p></li>
+          <li><img src="../img/aprova/lofi-enviado.png" alt="Wireframe: Changes sent confirmation" width="390" height="844" loading="lazy"><p class="cap"><b>Sent</b>The new version arrives on the same link.</p></li>
+          <li><img src="../img/aprova/antes-aviso.png" alt="Wireframe: dashed notice 'This piece changed after your approval'" width="390" height="844" loading="lazy"><p class="cap"><b>Changed</b>The first change notice.</p></li>
+        </ul>
+
+        <p>I tested with 5 people who hadn't taken part in the interviews: 3 from the agency side and 2 from the client side. After each task, the person rated how easy it was from 1 to 7. The goal was an average of 5 or more on every task.</p>
+
+        <figure class="chart wide">
+          <h4>How easy each task was</h4>
+          <p class="how">Average score from 1 (very hard) to 7 (very easy). The dashed line is the goal: 5.</p>
+          <ul class="bars">
+            <li><span class="lab">Agency · Check a change</span><span class="track"><span class="fill" style="--v:80%"></span><span class="limit" style="--l:57.1%"></span><span class="val" style="--v:80%">7.0</span></span></li>
+            <li><span class="lab">Agency · Find the piece</span><span class="track"><span class="fill" style="--v:76.6%"></span><span class="limit" style="--l:57.1%"></span><span class="val" style="--v:76.6%">6.7</span></span></li>
+            <li><span class="lab">Agency · See the status</span><span class="track"><span class="fill" style="--v:76.6%"></span><span class="limit" style="--l:57.1%"></span><span class="val" style="--v:76.6%">6.7</span></span></li>
+            <li><span class="lab">Client · Request a change</span><span class="track"><span class="fill" style="--v:74.3%"></span><span class="limit" style="--l:57.1%"></span><span class="val" style="--v:74.3%">6.5</span></span></li>
+            <li><span class="lab">Client · Approve</span><span class="track"><span class="fill" style="--v:68.6%"></span><span class="limit" style="--l:57.1%"></span><span class="val" style="--v:68.6%">6.0</span></span></li>
+            <li><span class="lab">Agency · See the history</span><span class="track"><span class="fill" style="--v:57.1%"></span><span class="limit" style="--l:57.1%"></span><span class="val" style="--v:57.1%">5.0</span></span></li>
+            <li><span class="lab">Agency · Final status</span><span class="track"><span class="fill" style="--v:57.1%"></span><span class="limit" style="--l:57.1%"></span><span class="val" style="--v:57.1%">5.0</span></span></li>
+            <li><span class="lab"><b>Client · Notice it changed</b></span><span class="track"><span class="fill hl" style="--v:51.4%"></span><span class="limit" style="--l:57.1%"></span><span class="val" style="--v:51.4%">4.5</span></span></li>
+            <li><span class="lab"><b>Agency · Spot the change</b></span><span class="track"><span class="fill hl" style="--v:45.7%"></span><span class="limit" style="--l:57.1%"></span><span class="val" style="--v:45.7%">4.0</span></span></li>
+          </ul>
+          <p class="legend-line"><span><i class="hl"></i>below the goal</span><span><i class="lim"></i>goal: 5</span></p>
+        </figure>
+
+        <p>The main flow worked. The two scores below the goal happened at the same moment: <strong>when the piece changes after being approved</strong>. The issues that came up:</p>
+        <ul class="funnel plain wide">
+          <li><b>4 of 5</b><span>didn't know whether the old approval still counted after the change</span></li>
+          <li><b>4 of 5</b><span>struggled to tell the approved version from the newest one</span></li>
+          <li><b>2 of 5</b><span>missed a clear confirmation that the piece was approved</span></li>
+        </ul>
+        <blockquote class="quote">"The most confusing part was understanding whether the previous approval was still valid after a change."<cite>Test participant, client side (translated from Portuguese)</cite></blockquote>
+
+        <div class="insight wide">
+          <p class="mono">The finding</p>
+          <p>The change notice was already on screen. What was missing was saying what it meant for the approval.</p>
+        </div>
+        <div class="callout"><b>Limits of this test</b>The agency tasks were adapted from the original script, and task time wasn't measured. With 5 people, I write "4 of 5", not percentages.</div>
+      </section>
+
+      <section id="redesenho">
+        <p class="mono num">Solution</p>
+        <h2>The redesign</h2>
+        <p>The problem didn't call for a new feature. It called for the screen to state <strong>the consequence</strong>, not just the fact. Drag the slider to compare the notice before and after the test.</p>
+
+        <div class="compare wide">
+          <div class="compare-frame" style="--pos: 50%">
+            <img src="../img/aprova/antes-aviso.png" alt="Before: dashed strip 'This piece changed after your approval'" width="390" height="844">
+            <div class="c-depois"><img src="../img/aprova/depois-aviso.png" alt="After: heading 'Your approval of v3 does not apply to v4. Review and approve again.'" width="390" height="844"></div>
+            <div class="c-handle" aria-hidden="true"><span></span></div>
+            <span class="c-lab l" aria-hidden="true">Before</span>
+            <span class="c-lab r" aria-hidden="true">After</span>
+            <input type="range" min="0" max="100" value="50" aria-label="Compare the notice before and after the test">
+          </div>
+          <ul class="compare-notes">
+            <li><b>Before</b>A dashed strip, with the same weight as the rest of the screen, said the piece had changed. It didn't say what to do.</li>
+            <li><b>After</b>The notice becomes the screen's heading and states the consequence: "Your approval of v3 does not apply to v4. Review and approve again."</li>
+          </ul>
+        </div>
+
+        <h3>What changed</h3>
+        <ol class="decisions wide">
+          <li><b>The screen says which version you're viewing</b>"You're viewing: v4 · not approved" (v4 is the piece's 4th version), with tabs to open each version.</li>
+          <li><b>Both versions appear together</b>v4 awaiting approval and v3 approved, with a note that it "does not apply to v4".</li>
+          <li><b>The history became a timeline</b>Who did what, when, and the state of each version: current, approved or replaced.</li>
+          <li><b>The approval became a receipt</b>Piece, version, who approved, when and a code. The agency gets notified and can download the approved version.</li>
+        </ol>
+
+        <div class="pair wide">
+          <figure class="figure"><img src="../img/aprova/antes-detalhe.png" alt="Before: piece detail with a dashed card 'v4 awaiting Rafael' and a list-style history" width="1440" height="900" loading="lazy"><figcaption>Before: "the v3 approval remains in the history" could be read as "is still valid".</figcaption></figure>
+          <figure class="figure"><img src="../img/aprova/depois-detalhe.png" alt="After: version tabs, a card with v4 awaiting and v3 approved that does not apply to v4, and a timeline" width="1440" height="900" loading="lazy"><figcaption>After: both versions side by side, version tabs and a timeline.</figcaption></figure>
+        </div>
+      </section>
+
+      <section id="validacao">
+        <p class="mono num">Step 4</p>
+        <h2>How I validated without new people</h2>
+        <p>I couldn't recruit new people to test again. Instead of skipping this step, I switched methods:</p>
+        <ul>
+          <li><strong>Heuristic evaluation:</strong> I reviewed the screens against Nielsen's heuristics, a classic list of usability best practices.</li>
+          <li><strong>Step-by-step walkthrough</strong> (the technical name is cognitive walkthrough): I redid the two failed tasks as if I were the person using it, in the old version and in the new one.</li>
+        </ul>
+        <ol class="funnel wide">
+          <li><b>10</b><span>issues in the 1st version, 1 of them severe enough to block use</span></li>
+          <li><b>5</b><span>issues in the 2nd version, after the redesign</span></li>
+          <li class="key"><b>1</b><span>issue in the final version, cosmetic only</span></li>
+        </ol>
+        <details class="details wide">
+          <summary>See issues by severity</summary>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th scope="col">Severity</th><th scope="col">1st version</th><th scope="col">2nd version</th><th scope="col">Final version</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Blocks use</th><td>1</td><td>0</td><td>0</td></tr>
+                <tr><th scope="row">Major</th><td>4</td><td>1</td><td>0</td></tr>
+                <tr><th scope="row">Minor</th><td>4</td><td>1</td><td>0</td></tr>
+                <tr><th scope="row">Cosmetic</th><td>1</td><td>3</td><td>1</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+        <p>The evaluation found something the test didn't: <strong>in the 1st version, when a new version was uploaded, the dashboard still said "Approved"</strong>. The agency could publish a file nobody had approved. It was a state I simply hadn't designed.</p>
+        <p>It also found issues in the redesign itself. The main one: with a new version pending, the agency couldn't download the approved version. In the final version I fixed that, gave each status color a single meaning and adjusted text that had too little contrast to read comfortably.</p>
+        <div class="callout"><b>The limit of this method</b>The recommendation is 3 to 5 evaluators. Here it was just me, and I also designed the screens. The evaluation doesn't replace a new test with people, which is still the next step.</div>
+      </section>
+
+      <section id="visual">
+        <p class="mono num">Interface</p>
+        <h2>The final UI</h2>
+        <p>With the flow validated, I designed the final version starting from one question: <strong>what does color need to say?</strong></p>
+
+        <ul class="screens wide">
+          <li><img src="../img/aprova/ui-revisao.png" alt="Final screen: Agência Norte requested approval of the Black Friday Post v3, with Request changes and Approve v3 buttons" width="780" height="1688" loading="lazy"><p class="cap"><b>Review</b>The piece comes first.</p></li>
+          <li><img src="../img/aprova/ui-comentar.png" alt="Final screen: yellow pin on the price and the comment 'Change the price to R$ 89.90'" width="780" height="1688" loading="lazy"><p class="cap"><b>Comment on a spot</b>One main action: send.</p></li>
+          <li><img src="../img/aprova/ui-mudou.png" alt="Final screen: yellow notice 'Your approval of v3 does not apply to v4' above the v4 piece" width="780" height="1688" loading="lazy"><p class="cap"><b>Changed after approval</b>The only strong yellow in the app.</p></li>
+          <li><img src="../img/aprova/ui-comprovante.png" alt="Final screen: Version 3 approved, with an approval receipt and code" width="780" height="1688" loading="lazy"><p class="cap"><b>Receipt</b>The approval is on record.</p></li>
+        </ul>
+
+        <ul>
+          <li><strong>The piece is the star.</strong> Whoever approves is there to look at the piece, which is the most colorful element on screen. Everything else stays neutral and only uses color when color means something.</li>
+          <li><strong>The 60-30-10 rule.</strong> About 60% of the screen is a neutral background, 30% is moss green (text and main button) and 10% is accents. Because accents are rare, they stand out.</li>
+          <li><strong>Each color has one meaning, and never appears alone.</strong> Green with ✓ means approved; yellow, someone needs to act; dashed, it's the other side's turn; gray, it's now history.</li>
+        </ul>
+        <div class="callout"><b>The yellow mistake</b>In the first draft, the "v4 awaiting" block used the same yellow as the price tag on the piece, and the two competed for attention. I kept the strong yellow only for the notice to the client.</div>
+
+        <figure class="figure wide"><img src="../img/aprova/ui-painel.png" alt="Agency dashboard: notice 'Rafael approved the Black Friday Post (v3)', search and a table of pieces sorted by urgency" width="2400" height="1500" loading="lazy"><figcaption>The dashboard follows urgency: first what depends on the agency, then what's waiting on the client and, last, what's already approved.</figcaption></figure>
+        <figure class="figure wide"><img src="../img/aprova/ui-detalhe.png" alt="Piece detail: version tabs, v4 awaiting Rafael, v3 approved that does not apply to v4 with View receipt and Download approved v3 links, and a timeline" width="2400" height="1500" loading="lazy"><figcaption>The detail shows what counts: v4 pending, v3 approved and the right file to publish.</figcaption></figure>
+        <figure class="figure wide"><img src="../img/aprova/cores-principios.png" alt="Color and principles board: 60-30-10 palette, meaning of each state and nine applied principles" width="2400" height="1896" loading="lazy"><figcaption>Colors, meanings and the principles behind each decision (in Portuguese).</figcaption></figure>
+
+        <p class="source">I used Claude as an assistant to organize the research and find sources.</p>
+      </section>
+
+      <section id="aprendi">
+        <p class="mono num">Takeaways</p>
+        <h2>What I learned</h2>
+        <p><strong>Information on the screen is not the same as information understood.</strong> The notice was there. It lacked emphasis, and it didn't say what it meant.</p>
+        <p><strong>The states nobody designs are where products break.</strong> The dashboard saying "Approved" for a version nobody approved came from a screen I hadn't anticipated.</p>
+        <p><strong>When you can't use the ideal method, switch methods and say so.</strong> It's better than skipping validation or pretending it happened.</p>
+
+        <h3>Next steps</h3>
+        <ul>
+          <li><strong>Test again with 2 or 3 new people</strong>, only on the two tasks below the goal. Target: a score of 5 or more.</li>
+          <li><strong>Several approvals at once.</strong> Today the dashboard notice shows a single piece. The next version would group them: "3 pieces approved today".</li>
+          <li><strong>What I'd measure after launch:</strong> how many revision rounds each piece takes (the market average is 5), how many approvals happen through the link and how many days pass between sending and approval.</li>
+        </ul>
+
+        <p class="source">Sources: <a href="https://ami.org.au/knowledge-hub/almost-a-guarantee-for-setting-money-on-fire-1000-marketers-agencies-and-betterbriefs-on-broken-creative-ideation-evaluation-its-crippling-impact-on-effectiveness-and-h/">BetterIdeas Project, 2025 (via AMI)</a> and <a href="https://wfanet.org/knowledge/item/2025/04/18/what-s-holding-back-brilliant-ideas">WFA</a>; <a href="https://canaltech.com.br/apps/o-que-os-brasileiros-mais-fazem-no-whatsapp-segundo-pesquisa/">Opinion Box survey on WhatsApp, 2025 (via Canaltech, in Portuguese)</a>; help documentation from <a href="https://help.filestage.io/fr/articles/9112521-how-to-share-content-with-reviewers-and-control-their-permissions">Filestage</a> and <a href="https://help.frame.io/en/articles/1161479-review-links-explained-for-clients-legacy">Frame.io</a>; <a href="https://forum.frame.io/t/commenting-for-external-clients-via-review-links-appears-broken-even-on-pro-plan/2645">Frame.io forum</a>. Accessed 10/25/2026.</p>
+      </section>
+
+    </article>
+  </div>
+
+  <div class="wrap">
+    <a class="next" href="pet.html">
+      <span><span class="mono">Next case study</span><b>An app to find a pet hotel</b></span>
+      <span class="arrow" aria-hidden="true">→</span>
+    </a>
+
+    <section class="contact" id="contact">
+      <h2>Let's talk.</h2>
+      <p>I'm open to UX/UI and Product Design roles, including remote ones. Send me a message.</p>
+      <div class="links">
+        <a class="btn" href="mailto:isabelaabdenor@gmail.com">isabelaabdenor@gmail.com</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/isabelaabdenor/">LinkedIn</a>
+        <a class="btn ghost" href="../curriculo-isabela-abdenor.pdf">Résumé (PDF, in Portuguese)</a>
+      </div>
+    </section>
+    <footer class="foot"><span>© 2026 Isabela Abdenor</span><span>Vitória, Brazil</span></footer>
+  </div>
+</main>
+
+<script src="../case.js?v=2"></script>
+</body>
+</html>
